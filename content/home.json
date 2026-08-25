@@ -1,0 +1,106 @@
+{
+  "hero_slides": [
+    {
+      "eyebrow": "Viandas por objetivo",
+      "titulo": "Comidas saludables diseñadas para acompañar tu objetivo.",
+      "texto": "Elegí entre DEFINIR, MANTENER o CONSTRUIR, y recibí viandas pensadas para tu meta real.",
+      "boton_texto": "Elegí tu meta",
+      "boton_link": "#metas",
+      "imagen": "assets/img/carr1.jpg"
+    },
+    {
+      "eyebrow": "Prácticas y sin vueltas",
+      "titulo": "Viandas congeladas, termoselladas y listas en minutos.",
+      "texto": "Organizá tu semana en un solo pedido y guardá todo listo para cuando lo necesites.",
+      "boton_texto": "Cómo funciona",
+      "boton_link": "#como-funciona",
+      "imagen": "assets/img/carr2.jpg"
+    },
+    {
+      "eyebrow": "META",
+      "titulo": "Tu objetivo es la meta. Nosotros te ayudamos a sostenerlo.",
+      "texto": "Comidas reales, ricas y prácticas, adaptadas a vos.",
+      "boton_texto": "Armá tu pack",
+      "boton_link": "#metas",
+      "imagen": "assets/img/carr3.jpg"
+    }
+  ],
+  "como_funciona": {
+    "eyebrow": "El sistema META",
+    "titulo": "¿Cómo funciona META?",
+    "pasos": [
+      {
+        "titulo": "Elegí tu meta",
+        "texto": "DEFINIR, MANTENER o CONSTRUIR según tu objetivo actual."
+      },
+      {
+        "titulo": "Elegí o armá tu pack",
+        "texto": "Elegí packs de 7, 14 o 28 viandas, o armá tu pedido personalizado sumando platos individuales."
+      },
+      {
+        "titulo": "Nosotros cocinamos",
+        "texto": "Comidas reales, ricas y adaptadas a tu meta."
+      },
+      {
+        "titulo": "Recibís y organizás",
+        "texto": "Viandas congeladas, termoselladas y listas para freezer."
+      },
+      {
+        "titulo": "Calentás y disfrutás",
+        "texto": "Tu comida lista en minutos."
+      }
+    ],
+    "frase_cierre": "Tu día más simple. Tu meta más cerca."
+  },
+  "elegir_meta": {
+    "eyebrow": "Punto de partida",
+    "titulo": "Elegí tu meta",
+    "texto": "Cada objetivo necesita una estrategia distinta. En META adaptamos las cantidades y combinaciones de cada plato para acompañar mejor tu proceso."
+  },
+  "filosofia": {
+    "eyebrow": "Nuestra manera de cocinar",
+    "titulo": "Nuestra filosofía gastronómica",
+    "si_titulo": "Lo que SÍ somos ✅",
+    "si_items": [
+      "Comida con sabor casero pero combinaciones gourmet.",
+      "Sabores conocidos.",
+      "Ingredientes reales y de primera calidad.",
+      "Recetas equilibradas.",
+      "Nutrición aplicada a la vida cotidiana."
+    ],
+    "no_titulo": "Lo que NO somos ❌",
+    "no_items": [
+      "Una dieta.",
+      "Comida sin sabor.",
+      "Restricción constante."
+    ]
+  },
+  "por_que": {
+    "eyebrow": "Confianza",
+    "titulo": "¿Por qué elegir META?",
+    "texto": "Comer saludable no debería ser complicado, aburrido ni depender de tener tiempo para cocinar todos los días. En META diseñamos viandas ricas, prácticas y equilibradas, adaptadas a tu objetivo personal para que puedas sostener tu alimentación de una forma simple y organizada.",
+    "items": [
+      {
+        "titulo": "Comidas con propósito",
+        "texto": "Cada vianda se adapta según tu objetivo: definir, mantener o construir."
+      },
+      {
+        "titulo": "Practicidad real",
+        "texto": "Recibís tus comidas congeladas, termoselladas y listas para conservar en freezer."
+      },
+      {
+        "titulo": "Ingredientes reales",
+        "texto": "Trabajamos con preparaciones caseras, combinaciones equilibradas y platos para el día a día."
+      },
+      {
+        "titulo": "Información clara",
+        "texto": "Cada vianda incluye composición, ingredientes, información nutricional, modo de consumo y conservación."
+      },
+      {
+        "titulo": "Más organización",
+        "texto": "Podés elegir packs de 7, 14 o 28 viandas, o armar tu pedido personalizado."
+      }
+    ],
+    "frase_cierre": "Tu objetivo es la meta. Nosotros te ayudamos a sostener el camino."
+  }
+}

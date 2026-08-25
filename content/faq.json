@@ -1,0 +1,44 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "¿Qué es un pack y cómo sé cuál elegir?",
+      "respuesta": "Un pack es una selección de viandas saludables pensadas para acompañarte durante la semana según tu objetivo personal. En META podés elegir packs de 7, 14 o 28 platos, según cuántas comidas quieras tener resueltas. Cada pack está adaptado a una de nuestras metas: DEFINIR, MANTENER o CONSTRUIR."
+    },
+    {
+      "pregunta": "¿Cómo hago mi pedido?",
+      "respuesta": "Podés realizar tu pedido directamente desde esta página, eligiendo tu meta, tu pack y tus platos. Si tenés alguna duda o necesitás ayuda para elegir tu pack, también podés escribirnos por WhatsApp. Atendemos consultas de lunes a sábados, de 8:00 a 19:00 hs."
+    },
+    {
+      "pregunta": "¿Son diferentes menús para cada meta o cómo funciona el sistema?",
+      "respuesta": "En META trabajamos con un mismo menú de platos, pero cada vianda se adapta según la meta que elijas. La diferencia no está en cambiar completamente el plato, sino en ajustar las cantidades, proporciones y combinaciones para que acompañen mejor tu objetivo."
+    },
+    {
+      "pregunta": "¿Se pueden combinar packs o elegir platos de distintas metas?",
+      "respuesta": "Sí. Además de los packs prearmados, vas a poder armar tu propio pack según tus necesidades. Podés seleccionar platos individuales, desde 1 vianda o más, y elegir para cada uno el objetivo que mejor se adapte a vos: DEFINIR, MANTENER o CONSTRUIR."
+    },
+    {
+      "pregunta": "¿Cómo se entregan nuestras viandas?",
+      "respuesta": "Nuestras viandas se entregan congeladas, termoselladas y listas para conservar. Utilizamos bandejas biodegradables, aptas para freezer y microondas. Cada vianda incluye una etiqueta descriptiva con composición, ingredientes, información nutricional, modo de consumo y conservación."
+    },
+    {
+      "pregunta": "¿Cuáles son los días y zonas de entrega?",
+      "respuesta": "Tomamos pedidos hasta el día miércoles de cada semana. Las entregas se realizan los días viernes y sábados, en horarios a convenir. Por el momento, trabajamos con entregas en Pilar y alrededores, con un costo único de envío de $5.000."
+    },
+    {
+      "pregunta": "¿Puedo retirar mi pedido?",
+      "respuesta": "Sí. Podés retirar tu pedido seleccionando la opción de retiro en sucursal al momento de coordinar tu compra. Los retiros se realizan en Necochea 444, Pilar, los días viernes o sábado, siempre con horario a convenir."
+    },
+    {
+      "pregunta": "¿Cómo caliento mi plato?",
+      "respuesta": "Para una mejor experiencia, recomendamos pasar la vianda del freezer a la heladera entre 12 y 24 horas antes de consumirla. Al momento de calentar, levantá una esquina del film o retiralo parcialmente y calentá en microondas de 3 a 5 minutos, según la potencia del equipo. Una vez descongelada, no volver a congelar."
+    },
+    {
+      "pregunta": "¿Tiene algún beneficio comprar por packs?",
+      "respuesta": "Sí. Al comprar por pack accedés a un precio diferencial sobre el valor de la vianda individual. Cuanto mayor sea la cantidad de platos que elijas, mejor será el beneficio sobre el total de tu compra."
+    },
+    {
+      "pregunta": "¿Cuáles son las formas de pago?",
+      "respuesta": "Podés abonar en efectivo al momento de la entrega o retiro del pedido. También podés pagar por transferencia bancaria, que debe realizarse con anticipación. Una vez hecha la transferencia, deberás enviarnos el comprobante por WhatsApp para poder verificarlo y procesar tu pedido."
+    }
+  ]
+}

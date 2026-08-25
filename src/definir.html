@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEFINIR — META Healthy Meals</title>
+<meta name="description" content="Viandas META para DEFINIR: alimentación más liviana, porciones controladas, foco en reducir grasa. Armá tu pack de 7, 14, 28 o personalizado.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/jpeg" href="assets/img/fav.jpg">
+<link rel="apple-touch-icon" href="assets/img/fav.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-meta="definir">
+
+<!-- ============================== HEADER ============================== -->
+<header class="header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo.jpg" alt="META Healthy Meals" class="logo-img">
+      <span class="logo-slogan"><span class="ls-white">Cada comida te acerca a donde</span> <span class="ls-green">querés llegar</span></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegación principal">
+      <div class="navitem" id="navMeta">
+        <button class="navtrigger" aria-expanded="false" onclick="toggleDropdown('navMeta')">
+          META
+          <svg class="chev icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="dropdown">
+          <div class="dd-metas">
+            <a href="definir.html" class="dd-meta" data-meta="definir">
+              <img src="assets/img/definir.png" alt="" class="dd-meta-icon">
+              <strong>DEFINIR</strong>
+              <span>Alimentación liviana, porciones controladas, foco en reducir grasa.</span>
+            </a>
+            <a href="mantener.html" class="dd-meta" data-meta="mantener">
+              <img src="assets/img/mantener.png" alt="" class="dd-meta-icon">
+              <strong>MANTENER</strong>
+              <span>Alimentación equilibrada, completa y fácil de sostener.</span>
+            </a>
+            <a href="construir.html" class="dd-meta" data-meta="construir">
+              <img src="assets/img/construir.png" alt="" class="dd-meta-icon">
+              <strong>CONSTRUIR</strong>
+              <span>Más energía y nutrientes para entrenamiento y rendimiento.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="regala.html" class="navlink">Regalá un Pack META</a>
+
+      <a href="institucional.html" class="navlink">Quiénes somos</a>
+
+      <div class="navitem" id="navDelivery">
+        <button class="navtrigger" aria-expanded="false" onclick="toggleDropdown('navDelivery')">
+          Días y zonas de entrega
+          <svg class="chev icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="dropdown">
+          <div class="dd-delivery">
+            <div class="dd-row"><svg class="icon" viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 9h18M4 5h16a1 1 0 011 1v13a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z"/></svg><span>Pedidos hasta el <strong>miércoles</strong>.</span></div>
+            <div class="dd-row"><svg class="icon" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg><span>Entregas <strong>viernes y sábados</strong>.</span></div>
+            <div class="dd-row"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 1114 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Zona <strong>Pilar y alrededores</strong> — envío $5.000.</span></div>
+            <div class="dd-row"><svg class="icon" viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v11a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z"/></svg><span>Retiro en <strong>Necochea 444, Pilar</strong>.</span></div>
+            <a href="entrega.html" class="dd-more">Ver todos los detalles →</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-cta">
+      <button class="burger" aria-label="Abrir menú" onclick="toggleMobileNav(true)">
+        <svg class="icon" viewBox="0 0 24 24" style="width:26px;height:26px"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== MOBILE NAV ============================== -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-head">
+    <a href="index.html" class="logo" onclick="toggleMobileNav(false)">
+      <img src="assets/img/logo.jpg" alt="META Healthy Meals" class="logo-img" style="height:44px">
+    </a>
+    <button class="mobile-nav-close" aria-label="Cerrar menú" onclick="toggleMobileNav(false)">
+      <svg class="icon" viewBox="0 0 24 24" style="width:24px;height:24px"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="mnav-group">
+    <button class="mnav-toggle" aria-expanded="false" onclick="toggleMnavPanel(this)">META<svg class="chev icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="mnav-panel">
+      <a href="definir.html" class="dd-meta" data-meta="definir" style="margin-bottom:10px"><img src="assets/img/definir.png" alt="" class="dd-meta-icon"><strong>DEFINIR</strong><span>Alimentación liviana, porciones controladas.</span></a>
+      <a href="mantener.html" class="dd-meta" data-meta="mantener" style="margin-bottom:10px"><img src="assets/img/mantener.png" alt="" class="dd-meta-icon"><strong>MANTENER</strong><span>Alimentación equilibrada y fácil de sostener.</span></a>
+      <a href="construir.html" class="dd-meta" data-meta="construir"><img src="assets/img/construir.png" alt="" class="dd-meta-icon"><strong>CONSTRUIR</strong><span>Más energía para entrenamiento y rendimiento.</span></a>
+    </div>
+  </div>
+
+  <a href="regala.html" class="mnav-simple">Regalá un Pack META</a>
+
+  <a href="institucional.html" class="mnav-simple" onclick="toggleMobileNav(false)">Quiénes somos</a>
+
+  <div class="mnav-group">
+    <button class="mnav-toggle" aria-expanded="false" onclick="toggleMnavPanel(this)">Días y zonas de entrega<svg class="chev icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="mnav-panel">
+      <div class="dd-delivery">
+        <div class="dd-row"><span>📆 Pedidos hasta el <strong>miércoles</strong>.</span></div>
+        <div class="dd-row"><span>🚚 Entregas <strong>viernes y sábados</strong>.</span></div>
+        <div class="dd-row"><span>📍 Zona <strong>Pilar y alrededores</strong> — envío $5.000.</span></div>
+        <div class="dd-row"><span>🏠 Retiro en <strong>Necochea 444, Pilar</strong>.</span></div>
+      </div>
+      <a href="entrega.html" class="dd-more">Ver todos los detalles →</a>
+    </div>
+  </div>
+
+  <a href="index.html#faq" class="mnav-simple" onclick="toggleMobileNav(false)">Preguntas frecuentes</a>
+  <a href="#" class="btn btn-fill btn-block" style="margin-top:24px" onclick="openWhatsAppGeneral(); return false;">📲 Hablar por WhatsApp</a>
+</div>
+<div class="drawer-overlay" id="mobileNavOverlay" onclick="toggleMobileNav(false)"></div>
+
+<!-- ============================== PAGE HERO ============================== -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-frame" style="--pc:var(--definir)">
+      <div class="page-hero-icon"><img src="assets/img/definir.png" alt="DEFINIR"></div>
+      <div class="page-hero-text">
+        <span class="eyebrow">Tu meta</span>
+        <h1 data-content="metas.definir.nombre">DEFINIR</h1>
+        <p data-content="metas.definir.descripcion_larga">Para quienes buscan una alimentación más liviana, con porciones controladas y foco en sostener un objetivo de reducción de grasa.</p>
+        <div class="page-hero-links">
+          <a href="definir.html" class="active">DEFINIR</a>
+          <a href="mantener.html">MANTENER</a>
+          <a href="construir.html">CONSTRUIR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PACKS ============================== -->
+<section class="packs-section" id="packs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Paso 2</span>
+      <h2>Armá tu pack DEFINIR</h2>
+      <p data-content="site.packs_intro">Elegí un pack cerrado si querés la semana resuelta, o armá tu propio pedido personalizado combinando platos y metas.</p>
+    </div>
+
+    <div class="packs-grid" id="packsGrid">
+      <button class="pack-card" data-pack="7" onclick="selectPack('7')">
+        <span class="pk-count">7</span>
+        <span class="pk-label">viandas · una semana resuelta</span>
+        <span class="pk-price" data-price="7"></span>
+        <span class="pk-unit" data-unit="7"></span>
+      </button>
+      <button class="pack-card" data-pack="14" onclick="selectPack('14')">
+        <span class="pk-count">14</span>
+        <span class="pk-label">viandas · dos semanas</span>
+        <span class="pk-price" data-price="14"></span>
+        <span class="pk-unit" data-unit="14"></span>
+      </button>
+      <button class="pack-card" data-pack="28" onclick="selectPack('28')">
+        <span class="pk-count">28</span>
+        <span class="pk-label">viandas · un mes</span>
+        <span class="pk-price" data-price="28"></span>
+        <span class="pk-unit" data-unit="28"></span>
+      </button>
+      <button class="pack-card custom" data-pack="custom" onclick="selectPack('custom')">
+        <span class="pk-count">Armá tu pack</span>
+        <span class="pk-label">personalizado · desde 1 plato</span>
+        <span class="pk-price" id="customFromPrice"></span>
+        <span class="pk-unit">Combiná platos y metas libremente</span>
+      </button>
+    </div>
+
+    <!-- BUILDER -->
+    <div class="builder" id="builder">
+      <div class="builder-head">
+        <h3 id="builderTitle">Elegí tus viandas</h3>
+        <div class="builder-progress" id="builderProgress"></div>
+      </div>
+      <div id="menuContainer"></div>
+
+      <div class="order-summary" id="orderSummary">
+        <h4>Tu selección</h4>
+        <div id="summaryContent"><p class="summary-empty">Todavía no elegiste ninguna vianda.</p></div>
+        <div class="summary-cta">
+          <button class="btn btn-fill" id="continueBtn" onclick="openCheckout()" disabled>Continuar con la entrega →</button>
+        </div>
+      </div>
+
+      <!-- CHECKOUT -->
+      <div class="checkout" id="checkout">
+        <h3>Datos de entrega</h3>
+        <p>Completá tus datos y te enviamos el pedido armado por WhatsApp para confirmarlo.</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="ckName">Nombre y apellido</label>
+            <input type="text" id="ckName" placeholder="Tu nombre" oninput="validateCheckout()">
+          </div>
+          <div class="field">
+            <label for="ckPhone">Teléfono</label>
+            <input type="tel" id="ckPhone" placeholder="11 1234-5678" oninput="validateCheckout()">
+          </div>
+          <div class="field full">
+            <label>Forma de entrega</label>
+            <div class="radio-group">
+              <div class="radio-opt">
+                <input type="radio" name="delivery" id="dvShip" value="envio" onchange="onDeliveryChange()">
+                <label for="dvShip">🚚 Envío a domicilio ($5.000)</label>
+              </div>
+              <div class="radio-opt">
+                <input type="radio" name="delivery" id="dvPickup" value="retiro" onchange="onDeliveryChange()">
+                <label for="dvPickup">🏠 Retiro en Necochea 444, Pilar</label>
+              </div>
+            </div>
+          </div>
+          <div class="field full" id="addressField" style="display:none">
+            <label for="ckAddress">Dirección <span class="hint">(zona Pilar y alrededores)</span></label>
+            <input type="text" id="ckAddress" placeholder="Calle, número, barrio" oninput="validateCheckout()">
+          </div>
+          <div class="field">
+            <label for="ckDay">Día preferido</label>
+            <select id="ckDay" onchange="validateCheckout()">
+              <option value="">Elegir…</option>
+              <option value="Viernes">Viernes</option>
+              <option value="Sábado">Sábado</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Forma de pago</label>
+            <div class="radio-group">
+              <div class="radio-opt">
+                <input type="radio" name="payment" id="payCash" value="Efectivo" onchange="validateCheckout()">
+                <label for="payCash">💵 Efectivo</label>
+              </div>
+              <div class="radio-opt">
+                <input type="radio" name="payment" id="payTransfer" value="Transferencia" onchange="validateCheckout()">
+                <label for="payTransfer">🏦 Transferencia</label>
+              </div>
+            </div>
+          </div>
+          <div class="field full">
+            <label for="ckNotes">Comentarios <span class="hint">(opcional)</span></label>
+            <textarea id="ckNotes" placeholder="Alguna aclaración para tu pedido…"></textarea>
+          </div>
+          <div class="field full">
+            <label for="ckCoupon">Cupón de descuento <span class="hint">(opcional)</span></label>
+            <input type="text" id="ckCoupon" placeholder="Ingresá tu código" style="text-transform:uppercase" oninput="this.value=this.value.toUpperCase()">
+          </div>
+        </div>
+        <div class="checkout-foot">
+          <span class="checkout-note">Te vamos a confirmar el pedido por WhatsApp antes de coordinar el pago.</span>
+          <button class="btn btn-wsp" id="sendOrderBtn" onclick="sendOrder()" disabled>📲 Enviar pedido por WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="assets/img/logo.jpg" alt="META Healthy Meals" class="logo-img"></a>
+        <p>Comidas saludables diseñadas para acompañar tu objetivo.</p>
+        <p data-content-html data-content="site.direccion_display">📍 Necochea 444, Pilar</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/metahealthymeals" target="_blank" rel="noopener" aria-label="Instagram" data-content-attr="href:site.instagram">
+            <svg class="icon" viewBox="0 0 24 24" style="width:18px;height:18px"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="#" onclick="openWhatsAppGeneral(); return false;" aria-label="WhatsApp">
+            <svg class="icon icon-fill" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M12 2C6.5 2 2 6.3 2 11.7c0 1.9.5 3.7 1.5 5.3L2 22l5.2-1.4c1.5.8 3.1 1.2 4.8 1.2 5.5 0 10-4.3 10-9.7C22 6.3 17.5 2 12 2zm0 17.7c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.3 8.5-8.3s8.5 3.7 8.5 8.3-3.8 8.6-8.5 8.6z"/><path d="M16.4 13.9c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1.1-.4-2-1.3-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.2-.9 1.4-1.4.2-.4.2-.7.1-.8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Hacé tu pedido</h5>
+        <a href="definir.html">Ver packs</a>
+        <a href="mantener.html">Armá tu pack</a>
+        <a href="#" onclick="openWhatsAppGeneral(); return false;">Escribinos por WhatsApp</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <a href="https://wa.me/5491178220970" target="_blank" rel="noopener" data-content-attr="href:site.whatsapp_href_principal">📲 <span data-content="site.telefono_display_principal">11 7822-0970</span></a>
+        <p data-content="site.horario_atencion">Lun a sáb de 8 a 19 hs</p>
+      </div>
+      <div class="footer-col">
+        <h5>Enlaces</h5>
+        <a href="index.html#metas">Elegí tu meta</a>
+        <a href="index.html#como-funciona">¿Cómo funciona?</a>
+        <a href="index.html#faq">Preguntas frecuentes</a>
+        <a href="entrega.html">Días y zonas de entrega</a>
+        <a href="institucional.html">Quiénes somos</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-phrase" data-content="site.footer_frase">Tu objetivo es la meta. Nosotros te ayudamos a sostenerlo.</span>
+      <span class="footer-copy" data-content="site.footer_copyright">© 2026 META Healthy Meals. Todos los derechos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="help-fab" onclick="openWhatsAppGeneral()" aria-label="Hablar por WhatsApp">
+  <svg class="icon icon-fill" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.3 2 11.7c0 1.9.5 3.7 1.5 5.3L2 22l5.2-1.4c1.5.8 3.1 1.2 4.8 1.2 5.5 0 10-4.3 10-9.7C22 6.3 17.5 2 12 2zm0 17.7c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.4-3-1.4-4.7 0-4.6 3.8-8.3 8.5-8.3s8.5 3.7 8.5 8.3-3.8 8.6-8.5 8.6z"/><path d="M16.4 13.9c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1.1-.4-2-1.3-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.6 2.5 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.2-.9 1.4-1.4.2-.4.2-.7.1-.8z"/></svg>
+</button>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

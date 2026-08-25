@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "eyebrow": "Sobre META",
+    "titulo": "Quiénes somos",
+    "texto": "La historia detrás del nombre, y el propósito, la misión, la visión y los valores que guían cada plato que armamos."
+  },
+  "nombre": {
+    "eyebrow": "Nuestro nombre",
+    "titulo": "¿Por qué nos llamamos META?",
+    "texto": "META representa el objetivo personal de cada uno. No importa si querés bajar de peso, mantener un estilo de vida saludable o ganar masa muscular: la comida deja de ser solo alimentación para convertirse en una herramienta que te ayuda a alcanzar ese objetivo.",
+    "cita": "Nuestra marca no vende solo \u201cviandas saludables\u201d. Vende la posibilidad de avanzar hacia una meta mediante una alimentación rica, práctica y diseñada con un propósito."
+  },
+  "pmv": {
+    "eyebrow": "Lo que nos guía",
+    "titulo": "Propósito, misión y visión",
+    "proposito": "Ayudar a las personas a alcanzar sus objetivos físicos y de bienestar a través de comida casera pero con combinaciones gourmet, rica, práctica y nutricionalmente inteligente.",
+    "mision": "Diseñar comidas listas para consumir que combinen sabor, practicidad y nutrición, adaptadas a la meta de cada persona y elaboradas con ingredientes reales de alta calidad.",
+    "vision": "Convertirnos en la marca de referencia en Argentina en comida congelada premium orientada a objetivos, demostrando que es posible comer rico, disfrutar y progresar al mismo tiempo."
+  },
+  "valores": {
+    "eyebrow": "Cómo lo hacemos",
+    "titulo": "Nuestros valores",
+    "items": [
+      { "titulo": "Comida real", "texto": "No creemos en alimentos extravagantes ni modas pasajeras. Creemos en ingredientes que cualquiera reconoce y disfruta." },
+      { "titulo": "Sabor primero", "texto": "Una comida saludable no tiene por qué ser aburrida. Cada receta debe tener identidad, textura y sabor." },
+      { "titulo": "Objetivo", "texto": "Cada plato tiene un propósito y acompaña una meta concreta." },
+      { "titulo": "Calidad", "texto": "Desde la selección de ingredientes hasta el packaging, cada detalle debe transmitir confianza y profesionalismo." },
+      { "titulo": "Simplicidad", "texto": "Hacemos que comer bien sea fácil. Solo hay que elegir una meta y disfrutar." }
+    ]
+  }
+}

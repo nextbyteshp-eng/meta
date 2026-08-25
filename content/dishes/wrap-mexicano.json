@@ -1,0 +1,25 @@
+{
+  "slug": "wrap-mexicano",
+  "categoria": "Wraps",
+  "nombre": "Wrap Mexicano de Pollo",
+  "descripcion": "Wrap integral con pollo especiado, arroz, vegetales y una suave salsa mexicana.",
+  "orden": 11,
+  "definir": {
+    "kcal": 360,
+    "proteinas": 32,
+    "carbohidratos": 31,
+    "grasas": 10
+  },
+  "mantener": {
+    "kcal": 460,
+    "proteinas": 30,
+    "carbohidratos": 48,
+    "grasas": 14
+  },
+  "construir": {
+    "kcal": 590,
+    "proteinas": 38,
+    "carbohidratos": 65,
+    "grasas": 16
+  }
+}

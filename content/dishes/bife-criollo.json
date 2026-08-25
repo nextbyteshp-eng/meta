@@ -1,0 +1,25 @@
+{
+  "slug": "bife-criollo",
+  "categoria": "Carne",
+  "nombre": "Bife Criollo",
+  "descripcion": "Bife grillado con papas rústicas, vegetales y salsa criolla casera.",
+  "orden": 6,
+  "definir": {
+    "kcal": 450,
+    "proteinas": 44,
+    "carbohidratos": 31,
+    "grasas": 16
+  },
+  "mantener": {
+    "kcal": 580,
+    "proteinas": 42,
+    "carbohidratos": 48,
+    "grasas": 22
+  },
+  "construir": {
+    "kcal": 740,
+    "proteinas": 52,
+    "carbohidratos": 65,
+    "grasas": 25
+  }
+}

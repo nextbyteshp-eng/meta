@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "eyebrow": "Para regalar",
+    "titulo": "Regalá un Pack META",
+    "texto": "¿Conocés a alguien que necesita una mano con sus comidas? Regalale un Pack META por el monto de 7, 14 o 28 viandas, y que elija su propia meta."
+  },
+  "monto": {
+    "eyebrow": "Cómo funciona",
+    "titulo": "Elegí un monto",
+    "texto": "El monto del regalo es el mismo valor que un Pack META de 7, 14 o 28 viandas. La persona que lo recibe elige después su propia meta — DEFINIR, MANTENER o CONSTRUIR — y arma su pedido como quiera."
+  }
+}

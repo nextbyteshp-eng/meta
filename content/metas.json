@@ -1,0 +1,17 @@
+{
+  "definir": {
+    "nombre": "DEFINIR",
+    "descripcion_corta": "Alimentación liviana, porciones controladas, foco en reducir grasa.",
+    "descripcion_larga": "Para quienes buscan una alimentación más liviana, con porciones controladas y foco en sostener un objetivo de reducción de grasa."
+  },
+  "mantener": {
+    "nombre": "MANTENER",
+    "descripcion_corta": "Alimentación equilibrada, completa y fácil de sostener.",
+    "descripcion_larga": "Para quienes buscan una alimentación equilibrada, completa y fácil de sostener en el tiempo."
+  },
+  "construir": {
+    "nombre": "CONSTRUIR",
+    "descripcion_corta": "Más energía y nutrientes para entrenamiento y rendimiento.",
+    "descripcion_larga": "Para quienes buscan mayor aporte de energía y nutrientes para acompañar el entrenamiento, el rendimiento o el desarrollo muscular."
+  }
+}

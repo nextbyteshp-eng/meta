@@ -1,0 +1,331 @@
+# ============================================================================
+# BACKEND — autenticación y guardado de cambios
+# ----------------------------------------------------------------------------
+# Netlify dejó de mantener "Git Gateway" (por eso el error "Your Git Gateway
+# backend is not returning valid settings" al intentar loguearse), así que en
+# vez de eso usamos DecapBridge (decapbridge.com): un servicio gratuito y
+# activamente mantenido, hecho específicamente para reemplazar Git Gateway.
+# No depende de Netlify para nada de esto.
+#
+# Para activarlo (una sola vez, 5 minutos):
+#   1. Creá una cuenta gratis en https://decapbridge.com/auth/signup
+#   2. "Add a site" y completá:
+#        - Git provider: GitHub
+#        - Git repository: tu-usuario/tu-repositorio
+#        - Git access token: un token generado en https://github.com/settings/tokens
+#          con permiso de lectura y escritura sobre "Contents" del repositorio
+#        - Decap CMS login URL: https://metahealthymeals.com.ar/admin/index.html
+#        - Auth type: "Classic" (login con contraseña) o "PKCE" (si además
+#          querés permitir "Iniciar sesión con Google/Microsoft")
+#   3. Al crear el sitio, DecapBridge te va a mostrar un bloque "backend:"
+#      ya armado con tus datos. Reemplazá las 4 líneas de acá abajo por ese
+#      bloque exacto (dejá el resto del archivo, desde "media_folder:" para
+#      abajo, tal cual está).
+#   4. Desde el panel de DecapBridge, pestaña "Manage collaborators" de tu
+#      sitio, invitá por email a quien vaya a cargar contenido.
+#
+# Mientras tanto, dejo esto con Git Gateway como referencia de qué reemplazar:
+backend:
+  name: git-gateway
+  branch: main
+  # <-- Reemplazar este bloque "backend:" completo por el que te da DecapBridge.
+
+# Las imágenes que se suban desde el panel se guardan acá adentro del repo,
+# y el sitio las sirve desde /assets/img/uploads/...
+media_folder: "src/assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+locale: "es"
+
+site_url: https://metahealthymeals.com.ar
+display_url: https://metahealthymeals.com.ar
+
+editor:
+  preview: false
+
+collections:
+  # ==================== VIANDAS (platos del menú) ====================
+  - name: "dishes"
+    label: "Viandas"
+    label_singular: "Vianda"
+    folder: "content/dishes"
+    create: true
+    delete: true
+    slug: "{{fields.slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: nombre
+    summary: "{{nombre}} ({{categoria}})"
+    fields:
+      - { label: "Nombre del plato", name: "nombre", widget: "string", hint: "Ej: Pollo Mediterráneo" }
+      - { label: "URL interna (slug)", name: "slug", widget: "string", hint: "Sin espacios ni tildes. Ej: pollo-mediterraneo. Una vez publicado, evitá cambiarlo." }
+      - label: "Categoría"
+        name: "categoria"
+        widget: "select"
+        options: ["Pollo", "Carne", "Wraps", "Bowls y Woks"]
+        hint: "En qué sección del menú aparece."
+      - { label: "Orden dentro de la categoría", name: "orden", widget: "number", default: 10, hint: "Los números más bajos aparecen primero." }
+      - { label: "Descripción", name: "descripcion", widget: "text", hint: "La bajada que ve el cliente en la tarjeta del plato." }
+      - label: "Composición — Definir"
+        name: "definir"
+        widget: "object"
+        hint: "Valores nutricionales de este plato para la meta Definir."
+        fields:
+          - { label: "Calorías (kcal)", name: "kcal", widget: "number" }
+          - { label: "Proteínas (g)", name: "proteinas", widget: "number" }
+          - { label: "Carbohidratos (g)", name: "carbohidratos", widget: "number" }
+          - { label: "Grasas (g)", name: "grasas", widget: "number" }
+      - label: "Composición — Mantener"
+        name: "mantener"
+        widget: "object"
+        hint: "Valores nutricionales de este plato para la meta Mantener."
+        fields:
+          - { label: "Calorías (kcal)", name: "kcal", widget: "number" }
+          - { label: "Proteínas (g)", name: "proteinas", widget: "number" }
+          - { label: "Carbohidratos (g)", name: "carbohidratos", widget: "number" }
+          - { label: "Grasas (g)", name: "grasas", widget: "number" }
+      - label: "Composición — Construir"
+        name: "construir"
+        widget: "object"
+        hint: "Valores nutricionales de este plato para la meta Construir."
+        fields:
+          - { label: "Calorías (kcal)", name: "kcal", widget: "number" }
+          - { label: "Proteínas (g)", name: "proteinas", widget: "number" }
+          - { label: "Carbohidratos (g)", name: "carbohidratos", widget: "number" }
+          - { label: "Grasas (g)", name: "grasas", widget: "number" }
+
+  # ==================== PREGUNTAS FRECUENTES ====================
+  - name: "faq"
+    label: "Preguntas frecuentes"
+    files:
+      - label: "Preguntas frecuentes"
+        name: "faq"
+        file: "content/faq.json"
+        fields:
+          - label: "Preguntas"
+            name: "preguntas"
+            widget: "list"
+            summary: "{{fields.pregunta}}"
+            fields:
+              - { label: "Pregunta", name: "pregunta", widget: "string" }
+              - { label: "Respuesta", name: "respuesta", widget: "text" }
+
+  # ==================== CONFIGURACIÓN GENERAL Y PÁGINAS ====================
+  - name: "config"
+    label: "Configuración y textos"
+    files:
+      # ---------------- Datos generales ----------------
+      - label: "Datos generales (contacto, precios, envío)"
+        name: "site"
+        file: "content/site.json"
+        fields:
+          - { label: "Nombre del sitio", name: "nombre_sitio", widget: "string" }
+          - { label: "Eslogan — parte blanca", name: "eslogan_blanco", widget: "string", hint: "Va debajo del logo. Ej: Cada comida te acerca a donde" }
+          - { label: "Eslogan — parte verde", name: "eslogan_verde", widget: "string", hint: "Ej: querés llegar" }
+          - { label: "WhatsApp principal (solo números, con código de país)", name: "telefono_whatsapp_principal", widget: "string", hint: "Ej: 5491122334455. Es el que recibe todos los pedidos." }
+          - { label: "WhatsApp secundario", name: "telefono_whatsapp_secundario", widget: "string", required: false }
+          - { label: "WhatsApp principal (como se muestra en texto)", name: "telefono_display_principal", widget: "string", hint: "Ej: 11 7822-0970" }
+          - { label: "WhatsApp secundario (como se muestra en texto)", name: "telefono_display_secundario", widget: "string", required: false }
+          - { label: "Instagram (link completo)", name: "instagram", widget: "string" }
+          - { label: "Dirección (texto simple)", name: "direccion", widget: "string", hint: "Ej: Necochea 444, Pilar. El 📍 y el resto del formato se agregan solos en el sitio, no hace falta escribirlo acá." }
+          - { label: "Horario de atención", name: "horario_atencion", widget: "string", hint: "Ej: Lun a sáb de 8 a 19 hs" }
+          - { label: "Zona de entrega", name: "zona_entrega", widget: "string", hint: "Ej: Pilar y alrededores" }
+          - { label: "Costo de envío ($)", name: "costo_envio", widget: "number" }
+          - { label: "Día límite para pedidos", name: "dias_pedido_limite", widget: "string", hint: "Ej: miércoles" }
+          - { label: "Días de entrega", name: "dias_entrega", widget: "string", hint: "Ej: viernes y sábados" }
+          - { label: "Días de retiro en sucursal", name: "dias_retiro", widget: "string", hint: "Ej: viernes o sábado" }
+          - { label: "Precio de la vianda individual ($)", name: "precio_vianda_individual", widget: "number", hint: "Precio por vianda para pedidos personalizados." }
+          - { label: "Precio por vianda — Pack de 7 ($)", name: "precio_pack_7_unidad", widget: "number" }
+          - { label: "Precio por vianda — Pack de 14 ($)", name: "precio_pack_14_unidad", widget: "number" }
+          - { label: "Precio por vianda — Pack de 28 ($)", name: "precio_pack_28_unidad", widget: "number" }
+          - { label: "Frase de cierre del pie de página", name: "footer_frase", widget: "string" }
+          - { label: "Texto de copyright", name: "footer_copyright", widget: "string" }
+          - { label: "Texto introductorio de 'Armá tu pack' (Definir/Mantener/Construir)", name: "packs_intro", widget: "text" }
+
+      # ---------------- Las tres metas ----------------
+      - label: "Las tres metas (Definir, Mantener, Construir)"
+        name: "metas"
+        file: "content/metas.json"
+        fields:
+          - label: "Definir"
+            name: "definir"
+            widget: "object"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Descripción corta (tarjetas y menú)", name: "descripcion_corta", widget: "text" }
+              - { label: "Descripción larga (encabezado de página)", name: "descripcion_larga", widget: "text" }
+          - label: "Mantener"
+            name: "mantener"
+            widget: "object"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Descripción corta (tarjetas y menú)", name: "descripcion_corta", widget: "text" }
+              - { label: "Descripción larga (encabezado de página)", name: "descripcion_larga", widget: "text" }
+          - label: "Construir"
+            name: "construir"
+            widget: "object"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Descripción corta (tarjetas y menú)", name: "descripcion_corta", widget: "text" }
+              - { label: "Descripción larga (encabezado de página)", name: "descripcion_larga", widget: "text" }
+
+      # ---------------- Página de inicio ----------------
+      - label: "Página de inicio"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - label: "Carrusel del inicio"
+            name: "hero_slides"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            hint: "Se pueden agregar, quitar o reordenar fotos libremente."
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título grande", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+              - { label: "Texto del botón", name: "boton_texto", widget: "string" }
+              - { label: "A dónde lleva el botón", name: "boton_link", widget: "string", hint: "Ej: #metas o definir.html" }
+              - { label: "Foto de fondo", name: "imagen", widget: "image" }
+          - label: "Sección '¿Cómo funciona META?'"
+            name: "como_funciona"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - label: "Pasos"
+                name: "pasos"
+                widget: "list"
+                summary: "{{fields.titulo}}"
+                fields:
+                  - { label: "Título del paso", name: "titulo", widget: "string" }
+                  - { label: "Texto del paso", name: "texto", widget: "text" }
+              - { label: "Frase de cierre", name: "frase_cierre", widget: "string" }
+          - label: "Sección 'Elegí tu meta'"
+            name: "elegir_meta"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "Sección 'Nuestra filosofía gastronómica'"
+            name: "filosofia"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Título columna 'Lo que SÍ somos'", name: "si_titulo", widget: "string" }
+              - label: "Puntos — Lo que SÍ somos"
+                name: "si_items"
+                widget: "list"
+                field: { label: "Punto", name: "item", widget: "string" }
+              - { label: "Título columna 'Lo que NO somos'", name: "no_titulo", widget: "string" }
+              - label: "Puntos — Lo que NO somos"
+                name: "no_items"
+                widget: "list"
+                field: { label: "Punto", name: "item", widget: "string" }
+          - label: "Sección '¿Por qué elegir META?'"
+            name: "por_que"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto introductorio", name: "texto", widget: "text" }
+              - label: "Razones"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.titulo}}"
+                fields:
+                  - { label: "Título", name: "titulo", widget: "string" }
+                  - { label: "Texto", name: "texto", widget: "text" }
+              - { label: "Frase de cierre", name: "frase_cierre", widget: "string" }
+
+      # ---------------- Página institucional ----------------
+      - label: "Página 'Quiénes somos'"
+        name: "institucional"
+        file: "content/institucional.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "'¿Por qué nos llamamos META?'"
+            name: "nombre"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+              - { label: "Frase destacada", name: "cita", widget: "text" }
+          - label: "Propósito, misión y visión"
+            name: "pmv"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Propósito", name: "proposito", widget: "text" }
+              - { label: "Misión", name: "mision", widget: "text" }
+              - { label: "Visión", name: "vision", widget: "text" }
+          - label: "Nuestros valores"
+            name: "valores"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - label: "Valores"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.titulo}}"
+                fields:
+                  - { label: "Título", name: "titulo", widget: "string" }
+                  - { label: "Texto", name: "texto", widget: "text" }
+
+      # ---------------- Página Regalá un Pack ----------------
+      - label: "Página 'Regalá un Pack META'"
+        name: "regala"
+        file: "content/regala.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "Sección 'Elegí un monto'"
+            name: "monto"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+
+      # ---------------- Página Días y zonas de entrega ----------------
+      - label: "Página 'Días y zonas de entrega'"
+        name: "entrega"
+        file: "content/entrega.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Palabra chica de arriba", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+          - label: "Tarjetas de información"
+            name: "tarjetas"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            hint: "Son 6 tarjetas fijas: Días de pedido, Días de entrega, Zona de envío, Retiro en sucursal, Cómo llega tu pedido, Formas de pago. Se puede usar **texto** para resaltar una palabra en negrita."
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto (podés usar <strong>palabra</strong> para resaltar)", name: "texto", widget: "text" }
+          - label: "Mapa de zona de entrega"
+            name: "mapa"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "text" }
+              - { label: "Link de Google My Maps (insertar)", name: "google_my_maps_embed_url", widget: "string", hint: "En Google My Maps: Compartir → Insertar en mi sitio web, y pegar acá la URL completa que empieza con https://www.google.com/maps/d/embed?mid=..." }

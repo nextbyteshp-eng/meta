@@ -1,0 +1,25 @@
+{
+  "slug": "wok-pollo",
+  "categoria": "Bowls y Woks",
+  "nombre": "Wok de Pollo y Vegetales",
+  "descripcion": "Pollo salteado con vegetales frescos y una salsa oriental suave.",
+  "orden": 15,
+  "definir": {
+    "kcal": 340,
+    "proteinas": 36,
+    "carbohidratos": 25,
+    "grasas": 10
+  },
+  "mantener": {
+    "kcal": 440,
+    "proteinas": 34,
+    "carbohidratos": 38,
+    "grasas": 14
+  },
+  "construir": {
+    "kcal": 560,
+    "proteinas": 42,
+    "carbohidratos": 51,
+    "grasas": 16
+  }
+}

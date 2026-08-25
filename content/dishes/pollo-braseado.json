@@ -1,0 +1,25 @@
+{
+  "slug": "pollo-braseado",
+  "categoria": "Pollo",
+  "nombre": "Pollo Braseado al Limón y Romero",
+  "descripcion": "Pollo cocido lentamente con limón y romero, calabazas asadas, chauchas y zanahoria.",
+  "orden": 5,
+  "definir": {
+    "kcal": 330,
+    "proteinas": 37,
+    "carbohidratos": 20,
+    "grasas": 12
+  },
+  "mantener": {
+    "kcal": 420,
+    "proteinas": 35,
+    "carbohidratos": 30,
+    "grasas": 16
+  },
+  "construir": {
+    "kcal": 540,
+    "proteinas": 44,
+    "carbohidratos": 40,
+    "grasas": 18
+  }
+}

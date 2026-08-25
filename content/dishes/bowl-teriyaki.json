@@ -1,0 +1,25 @@
+{
+  "slug": "bowl-teriyaki",
+  "categoria": "Bowls y Woks",
+  "nombre": "Bowl Teriyaki",
+  "descripcion": "Pollo teriyaki, arroz y vegetales salteados.",
+  "orden": 14,
+  "definir": {
+    "kcal": 410,
+    "proteinas": 36,
+    "carbohidratos": 38,
+    "grasas": 9
+  },
+  "mantener": {
+    "kcal": 530,
+    "proteinas": 34,
+    "carbohidratos": 58,
+    "grasas": 12
+  },
+  "construir": {
+    "kcal": 680,
+    "proteinas": 42,
+    "carbohidratos": 78,
+    "grasas": 14
+  }
+}

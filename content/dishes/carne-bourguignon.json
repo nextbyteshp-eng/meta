@@ -1,0 +1,25 @@
+{
+  "slug": "carne-bourguignon",
+  "categoria": "Carne",
+  "nombre": "Carne Bourguignon",
+  "descripcion": "Tiernos cubos de carne braseados en vino tinto, acompañados con calabaza asada y brócoli.",
+  "orden": 7,
+  "definir": {
+    "kcal": 440,
+    "proteinas": 42,
+    "carbohidratos": 23,
+    "grasas": 20
+  },
+  "mantener": {
+    "kcal": 560,
+    "proteinas": 40,
+    "carbohidratos": 35,
+    "grasas": 26
+  },
+  "construir": {
+    "kcal": 720,
+    "proteinas": 50,
+    "carbohidratos": 47,
+    "grasas": 30
+  }
+}

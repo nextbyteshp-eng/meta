@@ -1,0 +1,25 @@
+{
+  "slug": "bowl-mediterraneo",
+  "categoria": "Bowls y Woks",
+  "nombre": "Bowl Mediterráneo",
+  "descripcion": "Pollo grillado, arroz, vegetales asados y salsa mediterránea.",
+  "orden": 13,
+  "definir": {
+    "kcal": 390,
+    "proteinas": 38,
+    "carbohidratos": 31,
+    "grasas": 11
+  },
+  "mantener": {
+    "kcal": 500,
+    "proteinas": 36,
+    "carbohidratos": 48,
+    "grasas": 15
+  },
+  "construir": {
+    "kcal": 640,
+    "proteinas": 45,
+    "carbohidratos": 65,
+    "grasas": 17
+  }
+}

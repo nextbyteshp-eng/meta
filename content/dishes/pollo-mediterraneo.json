@@ -1,0 +1,25 @@
+{
+  "slug": "pollo-mediterraneo",
+  "categoria": "Pollo",
+  "nombre": "Pollo Mediterráneo",
+  "descripcion": "Pechuga grillada con arroz, vegetales asados y salsa mediterránea de yogur, limón y hierbas.",
+  "orden": 1,
+  "definir": {
+    "kcal": 370,
+    "proteinas": 40,
+    "carbohidratos": 29,
+    "grasas": 10
+  },
+  "mantener": {
+    "kcal": 480,
+    "proteinas": 38,
+    "carbohidratos": 45,
+    "grasas": 14
+  },
+  "construir": {
+    "kcal": 610,
+    "proteinas": 48,
+    "carbohidratos": 61,
+    "grasas": 16
+  }
+}

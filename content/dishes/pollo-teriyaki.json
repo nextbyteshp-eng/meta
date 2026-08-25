@@ -1,0 +1,25 @@
+{
+  "slug": "pollo-teriyaki",
+  "categoria": "Pollo",
+  "nombre": "Pollo Teriyaki",
+  "descripcion": "Pollo salteado con salsa teriyaki casera, arroz y vegetales de estación.",
+  "orden": 2,
+  "definir": {
+    "kcal": 410,
+    "proteinas": 38,
+    "carbohidratos": 36,
+    "grasas": 9
+  },
+  "mantener": {
+    "kcal": 520,
+    "proteinas": 36,
+    "carbohidratos": 55,
+    "grasas": 12
+  },
+  "construir": {
+    "kcal": 670,
+    "proteinas": 45,
+    "carbohidratos": 74,
+    "grasas": 14
+  }
+}

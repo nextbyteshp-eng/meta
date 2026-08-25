@@ -1,0 +1,25 @@
+{
+  "slug": "carne-mediterranea",
+  "categoria": "Carne",
+  "nombre": "Carne Mediterránea",
+  "descripcion": "Bife grillado con vegetales asados, tomates, aceitunas y hierbas mediterráneas.",
+  "orden": 9,
+  "definir": {
+    "kcal": 420,
+    "proteinas": 42,
+    "carbohidratos": 20,
+    "grasas": 18
+  },
+  "mantener": {
+    "kcal": 540,
+    "proteinas": 40,
+    "carbohidratos": 30,
+    "grasas": 24
+  },
+  "construir": {
+    "kcal": 690,
+    "proteinas": 50,
+    "carbohidratos": 40,
+    "grasas": 28
+  }
+}
