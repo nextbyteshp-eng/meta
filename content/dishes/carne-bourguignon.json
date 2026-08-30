@@ -1,25 +1,25 @@
 {
-  "slug": "carne-bourguignon",
+  "slug": "Peceto-braseado",
   "categoria": "Carne",
-  "nombre": "Carne Bourguignon",
-  "descripcion": "Tiernos cubos de carne braseados en vino tinto, acompañados con calabaza asada y brócoli.",
-  "orden": 7,
+  "nombre": "PECETO BRASEADO CON SALSA NEGRA",
+  "descripcion": "Peceto cocido lentamente hasta lograr una textura tierna y jugosa, bañado con nuestra salsa especiada y sutilmente agridulce. \nAcompañado de arroz yamaní primavera con zanahoria, arvejas y garbanzos.",
+  "orden": 1,
   "definir": {
-    "kcal": 440,
-    "proteinas": 42,
-    "carbohidratos": 23,
-    "grasas": 20
+    "kcal": 450,
+    "proteinas": 45,
+    "carbohidratos": 36,
+    "grasas": 13
   },
   "mantener": {
-    "kcal": 560,
-    "proteinas": 40,
-    "carbohidratos": 35,
-    "grasas": 26
+    "kcal": 580,
+    "proteinas": 53,
+    "carbohidratos": 53,
+    "grasas": 16
   },
   "construir": {
-    "kcal": 720,
-    "proteinas": 50,
-    "carbohidratos": 47,
-    "grasas": 30
+    "kcal": 750,
+    "proteinas": 65,
+    "carbohidratos": 75,
+    "grasas": 20
   }
 }
