@@ -1,25 +1,25 @@
 {
-  "slug": "bowl-mediterraneo",
-  "categoria": "Bowls y Woks",
-  "nombre": "Bowl Mediterráneo",
-  "descripcion": "Pollo grillado, arroz, vegetales asados y salsa mediterránea.",
-  "orden": 13,
+  "slug": "medpoll-rell",
+  "categoria": "Pollo",
+  "nombre": "MEDALLONES DE POLLO RELLENOS",
+  "descripcion": "Medallones de pechuga de pollo rellenos de espinaca, champiñones salteados y queso Port Salut. Acompañados de puré y vegetales, con cantidades adaptadas según tu META.",
+  "orden": 2,
   "definir": {
-    "kcal": 390,
-    "proteinas": 38,
-    "carbohidratos": 31,
-    "grasas": 11
+    "kcal": 399,
+    "proteinas": 45,
+    "carbohidratos": 28,
+    "grasas": 12
   },
   "mantener": {
-    "kcal": 500,
-    "proteinas": 36,
-    "carbohidratos": 48,
+    "kcal": 507,
+    "proteinas": 53,
+    "carbohidratos": 41,
     "grasas": 15
   },
   "construir": {
-    "kcal": 640,
-    "proteinas": 45,
-    "carbohidratos": 65,
-    "grasas": 17
+    "kcal": 698,
+    "proteinas": 64,
+    "carbohidratos": 71,
+    "grasas": 18
   }
 }
