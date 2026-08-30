@@ -1,25 +1,25 @@
 {
-  "slug": "bife-criollo",
-  "categoria": "Carne",
-  "nombre": "Bife Criollo",
-  "descripcion": "Bife grillado con papas rústicas, vegetales y salsa criolla casera.",
-  "orden": 6,
+  "slug": "Pech-grill",
+  "categoria": "Pollo",
+  "nombre": "PECHUGA DE POLLO GRILLADA CON LIMON Y ROMERO CON CREMA DE ESPINACAS",
+  "descripcion": "Pechuga de pollo grillada con limón y romero, acompañada de una suave crema de espinacas, arroz yamaní y vegetales salteados. \nTerminada con un toque de nueces para sumar textura y sabor.",
+  "orden": 1,
   "definir": {
-    "kcal": 450,
-    "proteinas": 44,
-    "carbohidratos": 31,
-    "grasas": 16
+    "kcal": 444,
+    "proteinas": 46,
+    "carbohidratos": 36,
+    "grasas": 12
   },
   "mantener": {
-    "kcal": 580,
-    "proteinas": 42,
-    "carbohidratos": 48,
-    "grasas": 22
+    "kcal": 563,
+    "proteinas": 54,
+    "carbohidratos": 51,
+    "grasas": 15
   },
   "construir": {
-    "kcal": 740,
-    "proteinas": 52,
-    "carbohidratos": 65,
-    "grasas": 25
+    "kcal": 767,
+    "proteinas": 67,
+    "carbohidratos": 78,
+    "grasas": 19
   }
 }
