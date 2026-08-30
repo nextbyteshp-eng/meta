@@ -1,25 +1,25 @@
 {
-  "slug": "bowl-teriyaki",
-  "categoria": "Bowls y Woks",
-  "nombre": "Bowl Teriyaki",
-  "descripcion": "Pollo teriyaki, arroz y vegetales salteados.",
-  "orden": 14,
+  "slug": "Pollo-teriyaki",
+  "categoria": "Pollo",
+  "nombre": "POLLO TERIYAKI CON ARROZ YAMANÍ",
+  "descripcion": "Tiras de pechuga de pollo glaseadas con nuestra teriyaki liviana, acompañadas de arroz yamaní salteado con brócoli, zanahoria, morrón y cebolla. \nFinalizado con un sutil toque de aceite de sésamo.",
+  "orden": 3,
   "definir": {
-    "kcal": 410,
-    "proteinas": 36,
-    "carbohidratos": 38,
+    "kcal": 430,
+    "proteinas": 44,
+    "carbohidratos": 43,
     "grasas": 9
   },
   "mantener": {
-    "kcal": 530,
-    "proteinas": 34,
-    "carbohidratos": 58,
+    "kcal": 555,
+    "proteinas": 52,
+    "carbohidratos": 60,
     "grasas": 12
   },
   "construir": {
-    "kcal": 680,
-    "proteinas": 42,
-    "carbohidratos": 78,
-    "grasas": 14
+    "kcal": 750,
+    "proteinas": 64,
+    "carbohidratos": 88,
+    "grasas": 16
   }
 }
