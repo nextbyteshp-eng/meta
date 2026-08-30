@@ -1,25 +1,25 @@
 {
-  "slug": "carne-mediterranea",
+  "slug": "Wok-carne ",
   "categoria": "Carne",
-  "nombre": "Carne Mediterránea",
-  "descripcion": "Bife grillado con vegetales asados, tomates, aceitunas y hierbas mediterráneas.",
-  "orden": 9,
+  "nombre": "WOK DE CARNE CON VEGETALES Y FIDEOS DE ARROZ",
+  "descripcion": "Tiras de bola de lomo salteadas al wok con morrón, cebolla y apio, sobre una combinación de fideos de zucchini y fideos de arroz.\nCondimentado con una salsa suave de inspiración oriental, ajo y jengibre.",
+  "orden": 2,
   "definir": {
-    "kcal": 420,
+    "kcal": 410,
     "proteinas": 42,
-    "carbohidratos": 20,
-    "grasas": 18
+    "carbohidratos": 27,
+    "grasas": 14
   },
   "mantener": {
-    "kcal": 540,
-    "proteinas": 40,
-    "carbohidratos": 30,
-    "grasas": 24
+    "kcal": 550,
+    "proteinas": 51,
+    "carbohidratos": 48,
+    "grasas": 17
   },
   "construir": {
-    "kcal": 690,
-    "proteinas": 50,
-    "carbohidratos": 40,
-    "grasas": 28
+    "kcal": 745,
+    "proteinas": 61,
+    "carbohidratos": 78,
+    "grasas": 20
   }
 }
