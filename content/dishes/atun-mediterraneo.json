@@ -1,0 +1,26 @@
+{
+  "precio": 1,
+  "nombre": "ATÚN MEDITERRÁNEO CON PAPAS Y VEGETALES",
+  "orden": 2,
+  "slug": "atun-mediterraneo",
+  "descripcion": "Atún en trozos acompañado de papas al vapor y vegetales mediterráneos con zucchini, morrón rojo, cebolla morada y tomate.\n\nAromatizado con limón, ajo, orégano y un delicado toque de aceite de oliva.",
+  "construir": {
+    "kcal": 715,
+    "proteinas": 58,
+    "carbohidratos": 72,
+    "grasas": 18
+  },
+  "mantener": {
+    "kcal": 530,
+    "proteinas": 48,
+    "carbohidratos": 48,
+    "grasas": 14
+  },
+  "categoria": "PESCADO",
+  "definir": {
+    "kcal": 410,
+    "proteinas": 41,
+    "carbohidratos": 32,
+    "grasas": 10
+  }
+}
