@@ -202,16 +202,20 @@ function openWhatsAppGeneral(){
   }
 
   function initPackPrices(){
+    const prices = DISHES.map(d => d.price).filter(p => p > 0);
+    const avg = prices.length ? prices.reduce((a,b) => a+b, 0) / prices.length : 0;
+    const min = prices.length ? Math.min(...prices) : 0;
+
     ['7','14','28'].forEach(n => {
-      const unit = PRICING.packs[n].unit;
-      const total = unit * Number(n);
+      const discount = PRICING.discounts[n] || 0;
+      const estTotal = avg * Number(n) * (1 - discount/100);
       const priceEl = document.querySelector(`[data-price="${n}"]`);
       const unitEl = document.querySelector(`[data-unit="${n}"]`);
-      if(priceEl) priceEl.textContent = `$ ${fmt(total)}`;
-      if(unitEl) unitEl.textContent = `$ ${fmt(unit)} c/u`;
+      if(priceEl) priceEl.textContent = `≈ $ ${fmt(estTotal)}`;
+      if(unitEl) unitEl.textContent = discount > 0 ? `${discount}% off por pack` : 'Precio según platos elegidos';
     });
     const customEl = document.getElementById('customFromPrice');
-    if(customEl) customEl.textContent = `Desde $ ${fmt(PRICING.individual)} c/u`;
+    if(customEl) customEl.textContent = `Desde $ ${fmt(min)} c/u`;
   }
 
   window.selectPack = function(type){
@@ -259,7 +263,7 @@ function openWhatsAppGeneral(){
     const target = Number(state.packType);
     const total = computeFixedCount();
     const plusDisabled = !isCustom && total >= target;
-    const unitPrice = isCustom ? PRICING.individual : PRICING.packs[state.packType].unit;
+    const unitPrice = dish.price || 0;
 
     const pillsHtml = isCustom ? `
       <div class="meta-pills">
@@ -337,18 +341,25 @@ function openWhatsAppGeneral(){
     if(state.packType === 'custom'){
       Object.entries(state.customCart).forEach(([key, qty]) => {
         const [dishId, metaKey] = key.split(':');
-        const m = scaleDish(DISH_MAP[dishId], metaKey);
-        price += PRICING.individual * qty;
+        const dish = DISH_MAP[dishId];
+        const m = scaleDish(dish, metaKey);
+        price += (dish.price || 0) * qty;
         kcal += m.kcal*qty; p += m.p*qty; c += m.c*qty; f += m.f*qty;
       });
     } else if(state.packType){
       const target = Number(state.packType);
       const count = computeFixedCount();
+      let subtotal = 0;
       Object.entries(state.fixedCart).forEach(([dishId, qty]) => {
-        const m = scaleDish(DISH_MAP[dishId], state.meta);
+        const dish = DISH_MAP[dishId];
+        const m = scaleDish(dish, state.meta);
+        subtotal += (dish.price || 0) * qty;
         kcal += m.kcal*qty; p += m.p*qty; c += m.c*qty; f += m.f*qty;
       });
-      if(count === target) price = target * PRICING.packs[target].unit;
+      if(count === target){
+        const discount = (PRICING.discounts && PRICING.discounts[state.packType]) || 0;
+        price = subtotal * (1 - discount/100);
+      }
     }
     return { price, kcal, p, c, f };
   }
@@ -367,12 +378,14 @@ function openWhatsAppGeneral(){
     } else if(isCustom){
       linesHtml = Object.entries(state.customCart).filter(([,q]) => q>0).map(([key, qty]) => {
         const [dishId, metaKey] = key.split(':');
-        return `<div class="summary-line"><span class="sl-name">${DISH_MAP[dishId].name} <span class="sl-tag">${META_FACTORS[metaKey].label}</span></span><span>x${qty}</span></div>`;
+        const dish = DISH_MAP[dishId];
+        return `<div class="summary-line"><span class="sl-name">${dish.name} <span class="sl-tag">${META_FACTORS[metaKey].label}</span></span><span>x${qty} — $ ${fmt((dish.price||0)*qty)}</span></div>`;
       }).join('');
     } else {
-      linesHtml = Object.entries(state.fixedCart).filter(([,q]) => q>0).map(([dishId, qty]) =>
-        `<div class="summary-line"><span class="sl-name">${DISH_MAP[dishId].name}</span><span>x${qty}</span></div>`
-      ).join('');
+      linesHtml = Object.entries(state.fixedCart).filter(([,q]) => q>0).map(([dishId, qty]) => {
+        const dish = DISH_MAP[dishId];
+        return `<div class="summary-line"><span class="sl-name">${dish.name}</span><span>x${qty} — $ ${fmt((dish.price||0)*qty)}</span></div>`;
+      }).join('');
       if(count < target){
         linesHtml += `<p class="summary-empty" style="margin-top:10px">Sumá ${target-count} vianda${target-count===1?'':'s'} más para completar tu pack.</p>`;
       }
@@ -430,16 +443,26 @@ function openWhatsAppGeneral(){
       lines.push('Detalle:');
       Object.entries(state.customCart).filter(([,q]) => q>0).forEach(([key, qty]) => {
         const [dishId, metaKey] = key.split(':');
-        lines.push(`• ${DISH_MAP[dishId].name} (${META_FACTORS[metaKey].label}) x${qty}`);
+        const dish = DISH_MAP[dishId];
+        lines.push(`• ${dish.name} (${META_FACTORS[metaKey].label}) x${qty} — $ ${fmt((dish.price||0)*qty)}`);
       });
     } else {
       lines.push(`🎯 Meta: ${META_FACTORS[state.meta].label}`);
       lines.push(`📦 Pack: ${state.packType} viandas`);
       lines.push('');
       lines.push('Detalle:');
+      let subtotal = 0;
       Object.entries(state.fixedCart).filter(([,q]) => q>0).forEach(([dishId, qty]) => {
-        lines.push(`• ${DISH_MAP[dishId].name} x${qty}`);
+        const dish = DISH_MAP[dishId];
+        subtotal += (dish.price||0)*qty;
+        lines.push(`• ${dish.name} x${qty} — $ ${fmt((dish.price||0)*qty)}`);
       });
+      const discount = (PRICING.discounts && PRICING.discounts[state.packType]) || 0;
+      if(discount > 0){
+        lines.push('');
+        lines.push(`Subtotal: $ ${fmt(subtotal)}`);
+        lines.push(`Descuento por pack (${discount}%): -$ ${fmt(subtotal * discount/100)}`);
+      }
     }
 
     const totals = computeTotals();
@@ -484,10 +507,13 @@ function openWhatsAppGeneral(){
   if(!el) return;
 
   let giftAmount = null;
+  const prices = (typeof DISHES !== 'undefined' ? DISHES : []).map(d => d.price).filter(p => p > 0);
+  const avg = prices.length ? prices.reduce((a,b) => a+b, 0) / prices.length : 0;
 
   el.innerHTML = ['7','14','28'].map(n => {
-    const total = Number(n) * PRICING.packs[n].unit;
-    return `<button type="button" class="gift-amt" data-n="${n}" onclick="selectGiftAmount('${n}')"><strong>${n} viandas</strong><span>$ ${fmt(total)}</span></button>`;
+    const discount = (PRICING.discounts && PRICING.discounts[n]) || 0;
+    const total = avg * Number(n) * (1 - discount/100);
+    return `<button type="button" class="gift-amt" data-n="${n}" onclick="selectGiftAmount('${n}')"><strong>${n} viandas</strong><span>≈ $ ${fmt(total)}</span></button>`;
   }).join('');
 
   window.selectGiftAmount = function(n){
@@ -506,12 +532,13 @@ function openWhatsAppGeneral(){
 
   window.sendGift = function(){
     if(document.getElementById('sendGiftBtn').disabled) return;
-    const total = Number(giftAmount) * PRICING.packs[giftAmount].unit;
+    const discount = (PRICING.discounts && PRICING.discounts[giftAmount]) || 0;
+    const total = avg * Number(giftAmount) * (1 - discount/100);
     const lines = [];
     lines.push('¡Hola META! 🎁 Quiero regalar un Pack META:');
     lines.push('');
     lines.push(`📦 Pack: ${giftAmount} viandas`);
-    lines.push(`💰 Monto: $ ${fmt(total)}`);
+    lines.push(`💰 Monto aproximado: $ ${fmt(total)} (el valor final depende de los platos que elija quien lo reciba)`);
     lines.push('');
     lines.push('🎁 Para: ' + document.getElementById('giftTo').value.trim());
     lines.push('👤 De parte de: ' + document.getElementById('giftFrom').value.trim());
