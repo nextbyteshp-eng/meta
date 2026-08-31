@@ -1,0 +1,26 @@
+{
+  "precio": 5,
+  "nombre": "SALMÓN GRILLADO AL ROMERO CON QUINOA",
+  "orden": 1,
+  "slug": "salmon-grillado",
+  "descripcion": "Salmón grillado y aromatizado con romero, acompañado de quinoa y vegetales salteados: zucchini, brócoli, morrón rojo y cebolla morada. \nTerminado con un toque fresco de limón que realza todos sus sabores.",
+  "construir": {
+    "kcal": 734,
+    "proteinas": 50,
+    "carbohidratos": 68,
+    "grasas": 28
+  },
+  "mantener": {
+    "kcal": 540,
+    "proteinas": 40,
+    "carbohidratos": 43,
+    "grasas": 22
+  },
+  "categoria": "PESCADO",
+  "definir": {
+    "kcal": 415,
+    "proteinas": 33,
+    "carbohidratos": 32,
+    "grasas": 17
+  }
+}
