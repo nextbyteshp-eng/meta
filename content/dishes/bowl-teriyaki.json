@@ -1,14 +1,14 @@
 {
-  "slug": "Pollo-teriyaki",
-  "categoria": "Pollo",
+  "precio": 1,
   "nombre": "POLLO TERIYAKI CON ARROZ YAMANÍ",
-  "descripcion": "Tiras de pechuga de pollo glaseadas con nuestra teriyaki liviana, acompañadas de arroz yamaní salteado con brócoli, zanahoria, morrón y cebolla. \nFinalizado con un sutil toque de aceite de sésamo.",
   "orden": 3,
-  "definir": {
-    "kcal": 430,
-    "proteinas": 44,
-    "carbohidratos": 43,
-    "grasas": 9
+  "slug": "Pollo-teriyaki",
+  "descripcion": "Tiras de pechuga de pollo glaseadas con nuestra teriyaki liviana, acompañadas de arroz yamaní salteado con brócoli, zanahoria, morrón y cebolla. \nFinalizado con un sutil toque de aceite de sésamo.",
+  "construir": {
+    "kcal": 750,
+    "proteinas": 64,
+    "carbohidratos": 88,
+    "grasas": 16
   },
   "mantener": {
     "kcal": 555,
@@ -16,10 +16,11 @@
     "carbohidratos": 60,
     "grasas": 12
   },
-  "construir": {
-    "kcal": 750,
-    "proteinas": 64,
-    "carbohidratos": 88,
-    "grasas": 16
+  "categoria": "POLLO",
+  "definir": {
+    "kcal": 430,
+    "proteinas": 44,
+    "carbohidratos": 43,
+    "grasas": 9
   }
 }
