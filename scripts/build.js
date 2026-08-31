@@ -79,6 +79,8 @@ function buildDataJS(dishes, site, faq) {
     cat: d.categoria,
     name: d.nombre,
     desc: d.descripcion,
+    // Precio propio de este plato — no todos cuestan lo mismo.
+    price: d.precio || 0,
     // Se guardan los 3 valores ya calculados (uno por meta), en vez de un
     // multiplicador: así lo que se ve en el panel es el número real que
     // va a aparecer en el sitio, sin fórmulas raras.
@@ -126,12 +128,14 @@ function scaleDish(dish, metaKey){
   return { kcal:m.kcal, p:m.proteinas, c:m.carbohidratos, f:m.grasas };
 }
 
+// Cada plato tiene su propio precio (arriba, en DISHES). Un pack cerrado
+// suma el precio real de los platos elegidos y le aplica este descuento
+// por comprar en cantidad — no es un precio fijo por unidad.
 const PRICING = {
-  individual: ${site.precio_vianda_individual},
-  packs: {
-    '7':{ unit:${site.precio_pack_7_unidad} },
-    '14':{ unit:${site.precio_pack_14_unidad} },
-    '28':{ unit:${site.precio_pack_28_unidad} }
+  discounts: {
+    '7': ${site.descuento_pack_7 || 0},
+    '14': ${site.descuento_pack_14 || 0},
+    '28': ${site.descuento_pack_28 || 0}
   },
 };
 
