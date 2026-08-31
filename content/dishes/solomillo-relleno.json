@@ -1,0 +1,26 @@
+{
+  "precio": 1,
+  "nombre": "SOLOMILLO RELLENO CON REDUCCIÓN DE VEGETALES",
+  "orden": 2,
+  "slug": "solomillo-relleno",
+  "descripcion": "Solomillo de cerdo relleno con espinaca, champiñones, cebolla, queso Port Salut y queso crema. \nServido con puré de calabaza y una reducción de vegetales que concentra y realza los sabores del plato.",
+  "construir": {
+    "kcal": 600,
+    "carbohidratos": 43,
+    "proteinas": 49,
+    "grasas": 25
+  },
+  "mantener": {
+    "kcal": 475,
+    "proteinas": 40,
+    "carbohidratos": 33,
+    "grasas": 20
+  },
+  "categoria": "CERDO",
+  "definir": {
+    "kcal": 370,
+    "proteinas": 34,
+    "carbohidratos": 23,
+    "grasas": 16
+  }
+}
