@@ -1,0 +1,26 @@
+{
+  "precio": 1,
+  "nombre": "SOLOMILLO DE CERDO CON MOSTAZA ANTIGUA Y MIEL",
+  "orden": 1,
+  "slug": "solomillo_mostaza",
+  "descripcion": "Solomillo de cerdo cocido hasta quedar tierno y jugoso, acompañado de puré de batata, zanahorias en bastones y chauchas. \n\nFinalizado con una salsa de mostaza antigua y miel, de perfil delicadamente dulce, ácido y especiado.",
+  "construir": {
+    "kcal": 720,
+    "proteinas": 55,
+    "carbohidratos": 88,
+    "grasas": 16
+  },
+  "mantener": {
+    "kcal": 545,
+    "proteinas": 46,
+    "carbohidratos": 58,
+    "grasas": 13
+  },
+  "categoria": "CERDO",
+  "definir": {
+    "kcal": 445,
+    "proteinas": 40,
+    "carbohidratos": 42,
+    "grasas": 11
+  }
+}
