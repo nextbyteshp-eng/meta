@@ -1,14 +1,14 @@
 {
-  "slug": "Pech-grill",
-  "categoria": "Pollo",
+  "precio": 1,
   "nombre": "PECHUGA DE POLLO GRILLADA CON LIMON Y ROMERO CON CREMA DE ESPINACAS",
-  "descripcion": "Pechuga de pollo grillada con limón y romero, acompañada de una suave crema de espinacas, arroz yamaní y vegetales salteados. \nTerminada con un toque de nueces para sumar textura y sabor.",
   "orden": 1,
-  "definir": {
-    "kcal": 444,
-    "proteinas": 46,
-    "carbohidratos": 36,
-    "grasas": 12
+  "slug": "Pech-grill",
+  "descripcion": "Pechuga de pollo grillada con limón y romero, acompañada de una suave crema de espinacas, arroz yamaní y vegetales salteados. \nTerminada con un toque de nueces para sumar textura y sabor.",
+  "construir": {
+    "kcal": 767,
+    "proteinas": 67,
+    "carbohidratos": 78,
+    "grasas": 19
   },
   "mantener": {
     "kcal": 563,
@@ -16,10 +16,11 @@
     "carbohidratos": 51,
     "grasas": 15
   },
-  "construir": {
-    "kcal": 767,
-    "proteinas": 67,
-    "carbohidratos": 78,
-    "grasas": 19
+  "categoria": "POLLO",
+  "definir": {
+    "kcal": 444,
+    "proteinas": 46,
+    "carbohidratos": 36,
+    "grasas": 12
   }
 }
