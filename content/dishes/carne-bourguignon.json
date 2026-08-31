@@ -1,14 +1,14 @@
 {
-  "slug": "Peceto-braseado",
-  "categoria": "Carne",
+  "precio": 1,
   "nombre": "PECETO BRASEADO CON SALSA NEGRA",
-  "descripcion": "Peceto cocido lentamente hasta lograr una textura tierna y jugosa, bañado con nuestra salsa especiada y sutilmente agridulce. \nAcompañado de arroz yamaní primavera con zanahoria, arvejas y garbanzos.",
   "orden": 1,
-  "definir": {
-    "kcal": 450,
-    "proteinas": 45,
-    "carbohidratos": 36,
-    "grasas": 13
+  "slug": "Peceto-braseado",
+  "descripcion": "Peceto cocido lentamente hasta lograr una textura tierna y jugosa, bañado con nuestra salsa especiada y sutilmente agridulce. \nAcompañado de arroz yamaní primavera con zanahoria, arvejas y garbanzos.",
+  "construir": {
+    "kcal": 750,
+    "proteinas": 65,
+    "carbohidratos": 75,
+    "grasas": 20
   },
   "mantener": {
     "kcal": 580,
@@ -16,10 +16,11 @@
     "carbohidratos": 53,
     "grasas": 16
   },
-  "construir": {
-    "kcal": 750,
-    "proteinas": 65,
-    "carbohidratos": 75,
-    "grasas": 20
+  "categoria": "CARNE",
+  "definir": {
+    "kcal": 450,
+    "proteinas": 45,
+    "carbohidratos": 36,
+    "grasas": 13
   }
 }
