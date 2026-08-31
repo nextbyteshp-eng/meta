@@ -1,14 +1,14 @@
 {
-  "slug": "Wok-carne ",
-  "categoria": "Carne",
+  "precio": 1,
   "nombre": "WOK DE CARNE CON VEGETALES Y FIDEOS DE ARROZ",
-  "descripcion": "Tiras de bola de lomo salteadas al wok con morrón, cebolla y apio, sobre una combinación de fideos de zucchini y fideos de arroz.\nCondimentado con una salsa suave de inspiración oriental, ajo y jengibre.",
   "orden": 2,
-  "definir": {
-    "kcal": 410,
-    "proteinas": 42,
-    "carbohidratos": 27,
-    "grasas": 14
+  "slug": "Wok-carne ",
+  "descripcion": "Tiras de bola de lomo salteadas al wok con morrón, cebolla y apio, sobre una combinación de fideos de zucchini y fideos de arroz.\nCondimentado con una salsa suave de inspiración oriental, ajo y jengibre.",
+  "construir": {
+    "kcal": 745,
+    "proteinas": 61,
+    "carbohidratos": 78,
+    "grasas": 20
   },
   "mantener": {
     "kcal": 550,
@@ -16,10 +16,11 @@
     "carbohidratos": 48,
     "grasas": 17
   },
-  "construir": {
-    "kcal": 745,
-    "proteinas": 61,
-    "carbohidratos": 78,
-    "grasas": 20
+  "categoria": "CARNE",
+  "definir": {
+    "kcal": 410,
+    "proteinas": 42,
+    "carbohidratos": 27,
+    "grasas": 14
   }
 }
