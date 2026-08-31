@@ -47,10 +47,10 @@ collections:
       - { label: "URL interna (slug)", name: "slug", widget: "string", hint: "Sin espacios ni tildes. Ej: pollo-mediterraneo. Una vez publicado, evitá cambiarlo." }
       - label: "Categoría"
         name: "categoria"
-        widget: "select"
-        options: ["Pollo", "Carne", "Wraps", "Bowls y Woks"]
-        hint: "En qué sección del menú aparece."
+        widget: "string"
+        hint: "En qué sección del menú aparece. Podés usar una de las que ya existen (Pollo, Carne, Wraps, Bowls y Woks) o escribir una nueva — se crea sola la primera vez que la uses en un plato."
       - { label: "Orden dentro de la categoría", name: "orden", widget: "number", default: 10, hint: "Los números más bajos aparecen primero." }
+      - { label: "Precio de esta vianda ($)", name: "precio", widget: "number", hint: "Precio de este plato en particular. Cada plato puede tener un precio distinto." }
       - { label: "Descripción", name: "descripcion", widget: "text", hint: "La bajada que ve el cliente en la tarjeta del plato." }
       - label: "Composición — Definir"
         name: "definir"
@@ -120,10 +120,9 @@ collections:
           - { label: "Día límite para pedidos", name: "dias_pedido_limite", widget: "string", hint: "Ej: miércoles" }
           - { label: "Días de entrega", name: "dias_entrega", widget: "string", hint: "Ej: viernes y sábados" }
           - { label: "Días de retiro en sucursal", name: "dias_retiro", widget: "string", hint: "Ej: viernes o sábado" }
-          - { label: "Precio de la vianda individual ($)", name: "precio_vianda_individual", widget: "number", hint: "Precio por vianda para pedidos personalizados." }
-          - { label: "Precio por vianda — Pack de 7 ($)", name: "precio_pack_7_unidad", widget: "number" }
-          - { label: "Precio por vianda — Pack de 14 ($)", name: "precio_pack_14_unidad", widget: "number" }
-          - { label: "Precio por vianda — Pack de 28 ($)", name: "precio_pack_28_unidad", widget: "number" }
+          - { label: "Descuento del Pack de 7 (%)", name: "descuento_pack_7", widget: "number", hint: "Se aplica sobre la suma de precios de los 7 platos elegidos. Ej: 5 = 5% de descuento." }
+          - { label: "Descuento del Pack de 14 (%)", name: "descuento_pack_14", widget: "number", hint: "Ej: 8 = 8% de descuento." }
+          - { label: "Descuento del Pack de 28 (%)", name: "descuento_pack_28", widget: "number", hint: "Ej: 12 = 12% de descuento." }
           - { label: "Frase de cierre del pie de página", name: "footer_frase", widget: "string" }
           - { label: "Texto de copyright", name: "footer_copyright", widget: "string" }
           - { label: "Texto introductorio de 'Armá tu pack' (Definir/Mantener/Construir)", name: "packs_intro", widget: "text" }
