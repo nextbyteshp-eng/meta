@@ -275,8 +275,13 @@ function openWhatsAppGeneral(){
     const minusFn = isCustom ? `changeCustomQty('${dish.id}','${viewMeta}',-1)` : `changeFixedQty('${dish.id}',-1)`;
     const plusFn = isCustom ? `changeCustomQty('${dish.id}','${viewMeta}',1)` : `changeFixedQty('${dish.id}',1)`;
 
+    const photoHtml = dish.photo
+      ? `<div class="dish-card-img"><img src="${dish.photo}" alt="${dish.name}" loading="lazy"></div>`
+      : '';
+
     return `
-      <div class="dish-card">
+      <div class="dish-card${dish.photo ? ' has-photo' : ''}">
+        ${photoHtml}
         <div class="dish-card-top">
           <h4>${dish.name}</h4>
           <span class="dish-price">$ ${fmt(unitPrice)}</span>

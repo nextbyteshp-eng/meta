@@ -81,6 +81,9 @@ function buildDataJS(dishes, site, faq) {
     desc: d.descripcion,
     // Precio propio de este plato — no todos cuestan lo mismo.
     price: d.precio || 0,
+    // Foto opcional — si no cargaron una, queda vacía y el sitio lo
+    // resuelve mostrando la tarjeta sin imagen (no un ícono roto).
+    photo: d.foto || '',
     // Se guardan los 3 valores ya calculados (uno por meta), en vez de un
     // multiplicador: así lo que se ve en el panel es el número real que
     // va a aparecer en el sitio, sin fórmulas raras.
