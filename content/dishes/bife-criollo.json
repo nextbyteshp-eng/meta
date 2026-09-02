@@ -1,4 +1,5 @@
 {
+  "foto": "/assets/img/uploads/chatgpt-image-2-sept-2026-18_43_35.png",
   "precio": 1,
   "nombre": "PECHUGA DE POLLO GRILLADA CON LIMON Y ROMERO CON CREMA DE ESPINACAS",
   "orden": 1,
@@ -8,19 +9,22 @@
     "kcal": 767,
     "proteinas": 67,
     "carbohidratos": 78,
-    "grasas": 19
+    "grasas": 19,
+    "precio": 11500
   },
   "mantener": {
     "kcal": 563,
     "proteinas": 54,
     "carbohidratos": 51,
-    "grasas": 15
+    "grasas": 15,
+    "precio": 10500
   },
   "categoria": "POLLO",
   "definir": {
     "kcal": 444,
     "proteinas": 46,
     "carbohidratos": 36,
-    "grasas": 12
+    "grasas": 12,
+    "precio": 9500
   }
 }
