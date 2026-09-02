@@ -79,14 +79,12 @@ function buildDataJS(dishes, site, faq) {
     cat: d.categoria,
     name: d.nombre,
     desc: d.descripcion,
-    // Precio propio de este plato — no todos cuestan lo mismo.
-    price: d.precio || 0,
     // Foto opcional — si no cargaron una, queda vacía y el sitio lo
     // resuelve mostrando la tarjeta sin imagen (no un ícono roto).
     photo: d.foto || '',
-    // Se guardan los 3 valores ya calculados (uno por meta), en vez de un
-    // multiplicador: así lo que se ve en el panel es el número real que
-    // va a aparecer en el sitio, sin fórmulas raras.
+    // Cada meta trae su propio precio y sus propios valores nutricionales
+    // (no un multiplicador): lo que se ve en el panel es el número real
+    // que va a aparecer en el sitio.
     definir: d.definir,
     mantener: d.mantener,
     construir: d.construir,

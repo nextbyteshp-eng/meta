@@ -193,16 +193,19 @@ function openWhatsAppGeneral(){
   }
 
   function scaleDish(dish, metaKey){
-    // Each dish carries its real macros per meta directly (set from the
-    // admin panel / content/dishes/*.json), using the Spanish field names
-    // the CMS shows (proteinas/carbohidratos/grasas) — translate them to
-    // the short names the rest of this file already uses (p/c/f).
+    // Each dish carries its real macros AND its own price per meta directly
+    // (set from the admin panel / content/dishes/*.json), using the Spanish
+    // field names the CMS shows — translate them to the short names the
+    // rest of this file already uses (p/c/f/price).
     const m = dish[metaKey] || dish.mantener || {};
-    return { kcal: m.kcal || 0, p: m.proteinas || 0, c: m.carbohidratos || 0, f: m.grasas || 0 };
+    return { kcal: m.kcal || 0, p: m.proteinas || 0, c: m.carbohidratos || 0, f: m.grasas || 0, price: m.precio || 0 };
   }
 
   function initPackPrices(){
-    const prices = DISHES.map(d => d.price).filter(p => p > 0);
+    // Cada plato tiene un precio distinto por meta, así que la estimación
+    // usa los precios de ESTA página (la meta ya fija por body[data-meta]),
+    // no un promedio genérico entre las tres.
+    const prices = DISHES.map(d => scaleDish(d, state.meta).price).filter(p => p > 0);
     const avg = prices.length ? prices.reduce((a,b) => a+b, 0) / prices.length : 0;
     const min = prices.length ? Math.min(...prices) : 0;
 
@@ -263,7 +266,7 @@ function openWhatsAppGeneral(){
     const target = Number(state.packType);
     const total = computeFixedCount();
     const plusDisabled = !isCustom && total >= target;
-    const unitPrice = dish.price || 0;
+    const unitPrice = m.price || 0;
 
     const pillsHtml = isCustom ? `
       <div class="meta-pills">
@@ -348,7 +351,7 @@ function openWhatsAppGeneral(){
         const [dishId, metaKey] = key.split(':');
         const dish = DISH_MAP[dishId];
         const m = scaleDish(dish, metaKey);
-        price += (dish.price || 0) * qty;
+        price += (m.price || 0) * qty;
         kcal += m.kcal*qty; p += m.p*qty; c += m.c*qty; f += m.f*qty;
       });
     } else if(state.packType){
@@ -358,7 +361,7 @@ function openWhatsAppGeneral(){
       Object.entries(state.fixedCart).forEach(([dishId, qty]) => {
         const dish = DISH_MAP[dishId];
         const m = scaleDish(dish, state.meta);
-        subtotal += (dish.price || 0) * qty;
+        subtotal += (m.price || 0) * qty;
         kcal += m.kcal*qty; p += m.p*qty; c += m.c*qty; f += m.f*qty;
       });
       if(count === target){
@@ -384,12 +387,14 @@ function openWhatsAppGeneral(){
       linesHtml = Object.entries(state.customCart).filter(([,q]) => q>0).map(([key, qty]) => {
         const [dishId, metaKey] = key.split(':');
         const dish = DISH_MAP[dishId];
-        return `<div class="summary-line"><span class="sl-name">${dish.name} <span class="sl-tag">${META_FACTORS[metaKey].label}</span></span><span>x${qty} — $ ${fmt((dish.price||0)*qty)}</span></div>`;
+        const m = scaleDish(dish, metaKey);
+        return `<div class="summary-line"><span class="sl-name">${dish.name} <span class="sl-tag">${META_FACTORS[metaKey].label}</span></span><span>x${qty} — $ ${fmt((m.price||0)*qty)}</span></div>`;
       }).join('');
     } else {
       linesHtml = Object.entries(state.fixedCart).filter(([,q]) => q>0).map(([dishId, qty]) => {
         const dish = DISH_MAP[dishId];
-        return `<div class="summary-line"><span class="sl-name">${dish.name}</span><span>x${qty} — $ ${fmt((dish.price||0)*qty)}</span></div>`;
+        const m = scaleDish(dish, state.meta);
+        return `<div class="summary-line"><span class="sl-name">${dish.name}</span><span>x${qty} — $ ${fmt((m.price||0)*qty)}</span></div>`;
       }).join('');
       if(count < target){
         linesHtml += `<p class="summary-empty" style="margin-top:10px">Sumá ${target-count} vianda${target-count===1?'':'s'} más para completar tu pack.</p>`;
@@ -449,7 +454,8 @@ function openWhatsAppGeneral(){
       Object.entries(state.customCart).filter(([,q]) => q>0).forEach(([key, qty]) => {
         const [dishId, metaKey] = key.split(':');
         const dish = DISH_MAP[dishId];
-        lines.push(`• ${dish.name} (${META_FACTORS[metaKey].label}) x${qty} — $ ${fmt((dish.price||0)*qty)}`);
+        const m = scaleDish(dish, metaKey);
+        lines.push(`• ${dish.name} (${META_FACTORS[metaKey].label}) x${qty} — $ ${fmt((m.price||0)*qty)}`);
       });
     } else {
       lines.push(`🎯 Meta: ${META_FACTORS[state.meta].label}`);
@@ -459,8 +465,9 @@ function openWhatsAppGeneral(){
       let subtotal = 0;
       Object.entries(state.fixedCart).filter(([,q]) => q>0).forEach(([dishId, qty]) => {
         const dish = DISH_MAP[dishId];
-        subtotal += (dish.price||0)*qty;
-        lines.push(`• ${dish.name} x${qty} — $ ${fmt((dish.price||0)*qty)}`);
+        const m = scaleDish(dish, state.meta);
+        subtotal += (m.price||0)*qty;
+        lines.push(`• ${dish.name} x${qty} — $ ${fmt((m.price||0)*qty)}`);
       });
       const discount = (PRICING.discounts && PRICING.discounts[state.packType]) || 0;
       if(discount > 0){
@@ -512,7 +519,17 @@ function openWhatsAppGeneral(){
   if(!el) return;
 
   let giftAmount = null;
-  const prices = (typeof DISHES !== 'undefined' ? DISHES : []).map(d => d.price).filter(p => p > 0);
+  // La página de regalo no tiene una meta fija (quien lo recibe elige la
+  // suya después), así que el promedio se calcula sobre los precios de
+  // las tres metas juntas — una referencia general, no exacta.
+  const allDishes = typeof DISHES !== 'undefined' ? DISHES : [];
+  const prices = [];
+  allDishes.forEach(d => {
+    ['definir','mantener','construir'].forEach(mk => {
+      const p = d[mk] && d[mk].precio;
+      if(p > 0) prices.push(p);
+    });
+  });
   const avg = prices.length ? prices.reduce((a,b) => a+b, 0) / prices.length : 0;
 
   el.innerHTML = ['7','14','28'].map(n => {

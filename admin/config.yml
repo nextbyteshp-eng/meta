@@ -50,14 +50,14 @@ collections:
         widget: "string"
         hint: "En qué sección del menú aparece. Podés usar una de las que ya existen (Pollo, Carne, Wraps, Bowls y Woks) o escribir una nueva — se crea sola la primera vez que la uses en un plato."
       - { label: "Orden dentro de la categoría", name: "orden", widget: "number", default: 10, hint: "Los números más bajos aparecen primero." }
-      - { label: "Precio de esta vianda ($)", name: "precio", widget: "number", hint: "Precio de este plato en particular. Cada plato puede tener un precio distinto." }
       - { label: "Foto del plato", name: "foto", widget: "image", required: false, hint: "Opcional. Si no cargás una foto, el plato se sigue mostrando normal, solo con texto — podés ir sumando fotos de a poco, no hace falta tenerlas todas." }
       - { label: "Descripción", name: "descripcion", widget: "text", hint: "La bajada que ve el cliente en la tarjeta del plato." }
       - label: "Composición — Definir"
         name: "definir"
         widget: "object"
-        hint: "Valores nutricionales de este plato para la meta Definir."
+        hint: "Precio y valores nutricionales de este plato para la meta Definir. El precio puede ser distinto al de Mantener y Construir (menos ingredientes, porción más chica, etc.)."
         fields:
+          - { label: "Precio ($)", name: "precio", widget: "number" }
           - { label: "Calorías (kcal)", name: "kcal", widget: "number" }
           - { label: "Proteínas (g)", name: "proteinas", widget: "number" }
           - { label: "Carbohidratos (g)", name: "carbohidratos", widget: "number" }
@@ -65,8 +65,9 @@ collections:
       - label: "Composición — Mantener"
         name: "mantener"
         widget: "object"
-        hint: "Valores nutricionales de este plato para la meta Mantener."
+        hint: "Precio y valores nutricionales de este plato para la meta Mantener."
         fields:
+          - { label: "Precio ($)", name: "precio", widget: "number" }
           - { label: "Calorías (kcal)", name: "kcal", widget: "number" }
           - { label: "Proteínas (g)", name: "proteinas", widget: "number" }
           - { label: "Carbohidratos (g)", name: "carbohidratos", widget: "number" }
@@ -74,8 +75,9 @@ collections:
       - label: "Composición — Construir"
         name: "construir"
         widget: "object"
-        hint: "Valores nutricionales de este plato para la meta Construir."
+        hint: "Precio y valores nutricionales de este plato para la meta Construir."
         fields:
+          - { label: "Precio ($)", name: "precio", widget: "number" }
           - { label: "Calorías (kcal)", name: "kcal", widget: "number" }
           - { label: "Proteínas (g)", name: "proteinas", widget: "number" }
           - { label: "Carbohidratos (g)", name: "carbohidratos", widget: "number" }
