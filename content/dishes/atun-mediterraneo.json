@@ -1,26 +1,29 @@
 {
   "precio": 1,
-  "nombre": "ATÚN MEDITERRÁNEO CON PAPAS Y VEGETALES",
+  "nombre": "SALMÓN BLANCO MEDITERRÁNEO",
   "orden": 2,
   "slug": "atun-mediterraneo",
-  "descripcion": "Atún en trozos acompañado de papas al vapor y vegetales mediterráneos con zucchini, morrón rojo, cebolla morada y tomate.\n\nAromatizado con limón, ajo, orégano y un delicado toque de aceite de oliva.",
+  "descripcion": "Filet de salmón blanco cocido suavemente al limón y hierbas, acompañado de papas y vegetales mediterráneos. \n\nTerminado con nuestra salsa de tomate, morrón asado y especias, que aporta frescura, jugosidad y un sabor delicadamente intenso.",
   "construir": {
     "kcal": 715,
     "proteinas": 58,
     "carbohidratos": 72,
-    "grasas": 18
+    "grasas": 18,
+    "precio": 16000
   },
   "mantener": {
     "kcal": 530,
     "proteinas": 48,
     "carbohidratos": 48,
-    "grasas": 14
+    "grasas": 14,
+    "precio": 14500
   },
   "categoria": "PESCADO",
   "definir": {
     "kcal": 410,
     "proteinas": 41,
     "carbohidratos": 32,
-    "grasas": 10
+    "grasas": 10,
+    "precio": 13000
   }
 }
