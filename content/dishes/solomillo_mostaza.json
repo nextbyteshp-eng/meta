@@ -8,19 +8,22 @@
     "kcal": 720,
     "proteinas": 55,
     "carbohidratos": 88,
-    "grasas": 16
+    "grasas": 16,
+    "precio": 12000
   },
   "mantener": {
     "kcal": 545,
     "proteinas": 46,
     "carbohidratos": 58,
-    "grasas": 13
+    "grasas": 13,
+    "precio": 11000
   },
   "categoria": "CERDO",
   "definir": {
     "kcal": 445,
     "proteinas": 40,
     "carbohidratos": 42,
-    "grasas": 11
+    "grasas": 11,
+    "precio": 10000
   }
 }
