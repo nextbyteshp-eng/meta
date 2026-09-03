@@ -5,14 +5,14 @@
   "slug": "carne-salteada",
   "descripcion": "Tiras de carne vacuna magra salteadas al wok con brócoli, zucchini, morrón, zanahoria y cebolla, terminadas con salsa oriental de soja, miel, ajo y jengibre. \n\nAcompañadas de arroz yamaní.",
   "construir": {
-    "precio": 1,
+    "precio": 14000,
     "kcal": 750,
     "proteinas": 64,
     "carbohidratos": 88,
     "grasas": 16
   },
   "mantener": {
-    "precio": 1,
+    "precio": 12600,
     "kcal": 555,
     "proteinas": 52,
     "carbohidratos": 43,
@@ -20,7 +20,7 @@
   },
   "categoria": "CARNE",
   "definir": {
-    "precio": 1,
+    "precio": 11500,
     "kcal": 430,
     "proteinas": 44,
     "carbohidratos": 43,
