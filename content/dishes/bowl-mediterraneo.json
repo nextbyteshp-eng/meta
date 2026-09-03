@@ -1,9 +1,10 @@
 {
+  "foto": "/assets/img/uploads/chatgpt-image-3-sept-2026-16_16_36.png",
   "precio": 1,
   "nombre": "MEDALLONES DE POLLO RELLENOS DE ESPINACA, HONGOS Y QUESO ",
   "orden": 2,
   "slug": "medpoll-rell",
-  "descripcion": "Medallones de pechuga de pollo rellenos de espinaca, champiñones salteados y queso Port Salut. Acompañados de puré y vegetales, con cantidades adaptadas según tu META.",
+  "descripcion": "Medallones de pechuga de pollo rellenos de espinaca, champiñones salteados y queso Port Salut. Acompañados de puré y vegetales, con cantidades adaptadas según tu META.\n\nPURE DE CALABAZA (DEFINIR) / PURE DE CALABAZA Y BATATA (MANTENER Y CONSTRUIR)",
   "construir": {
     "kcal": 698,
     "proteinas": 64,
