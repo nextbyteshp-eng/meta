@@ -8,19 +8,22 @@
     "kcal": 750,
     "proteinas": 64,
     "carbohidratos": 88,
-    "grasas": 16
+    "grasas": 16,
+    "precio": 11500
   },
   "mantener": {
     "kcal": 555,
     "proteinas": 52,
     "carbohidratos": 60,
-    "grasas": 12
+    "grasas": 12,
+    "precio": 10500
   },
   "categoria": "POLLO",
   "definir": {
     "kcal": 430,
     "proteinas": 44,
     "carbohidratos": 43,
-    "grasas": 9
+    "grasas": 9,
+    "precio": 9500
   }
 }
