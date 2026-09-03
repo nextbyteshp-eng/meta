@@ -1,28 +1,29 @@
 {
-  "orden": 3,
+  "foto": "/assets/img/uploads/whatsapp-image-2026-09-02-at-11.05.13-am.jpeg",
   "nombre": "CARNE SALTEADA ESTILO ORIENTAL",
+  "orden": 3,
   "slug": "carne-salteada",
-  "categoria": "CARNE",
   "descripcion": "Tiras de carne vacuna magra salteadas al wok con brócoli, zucchini, morrón, zanahoria y cebolla, terminadas con salsa oriental de soja, miel, ajo y jengibre. \n\nAcompañadas de arroz yamaní.",
-  "definir": {
+  "construir": {
     "precio": 1,
-    "kcal": 1,
-    "proteinas": 1,
-    "carbohidratos": 1,
-    "grasas": 0
+    "kcal": 750,
+    "proteinas": 64,
+    "carbohidratos": 88,
+    "grasas": 16
   },
   "mantener": {
     "precio": 1,
-    "kcal": 1,
-    "proteinas": 1,
-    "carbohidratos": 1,
-    "grasas": 1
+    "kcal": 555,
+    "proteinas": 52,
+    "carbohidratos": 43,
+    "grasas": 12
   },
-  "construir": {
+  "categoria": "CARNE",
+  "definir": {
     "precio": 1,
-    "kcal": 1,
-    "proteinas": 0,
-    "carbohidratos": 1,
-    "grasas": 1
+    "kcal": 430,
+    "proteinas": 44,
+    "carbohidratos": 43,
+    "grasas": 9
   }
 }
