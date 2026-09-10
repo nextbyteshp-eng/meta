@@ -10,14 +10,14 @@
     "proteinas": 65,
     "carbohidratos": 75,
     "grasas": 20,
-    "precio": 13600
+    "precio": 14600
   },
   "mantener": {
     "kcal": 580,
     "proteinas": 53,
     "carbohidratos": 53,
     "grasas": 16,
-    "precio": 12500
+    "precio": 13500
   },
   "categoria": "CARNE",
   "definir": {
@@ -25,6 +25,6 @@
     "proteinas": 45,
     "carbohidratos": 36,
     "grasas": 13,
-    "precio": 12000
+    "precio": 13000
   }
 }
