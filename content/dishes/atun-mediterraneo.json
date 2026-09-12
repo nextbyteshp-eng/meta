@@ -10,7 +10,7 @@
     "proteinas": 58,
     "carbohidratos": 72,
     "grasas": 18,
-    "precio": 17500
+    "precio": 17000
   },
   "mantener": {
     "kcal": 530,
@@ -25,6 +25,6 @@
     "proteinas": 41,
     "carbohidratos": 32,
     "grasas": 10,
-    "precio": 14500
+    "precio": 15000
   }
 }
