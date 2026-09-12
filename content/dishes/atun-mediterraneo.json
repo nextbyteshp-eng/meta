@@ -6,25 +6,25 @@
   "slug": "atun-mediterraneo",
   "descripcion": "Filet de salmón blanco cocido suavemente al limón y hierbas, acompañado de papas y vegetales mediterráneos. \n\nTerminado con nuestra salsa de tomate, morrón asado y especias, que aporta frescura, jugosidad y un sabor delicadamente intenso.",
   "construir": {
-    "kcal": 715,
-    "proteinas": 58,
-    "carbohidratos": 72,
-    "grasas": 18,
+    "kcal": 622,
+    "proteinas": 57,
+    "carbohidratos": 78,
+    "grasas": 10,
     "precio": 17000
   },
   "mantener": {
-    "kcal": 530,
-    "proteinas": 48,
-    "carbohidratos": 48,
-    "grasas": 14,
+    "kcal": 469,
+    "proteinas": 47,
+    "carbohidratos": 55,
+    "grasas": 8,
     "precio": 16000
   },
   "categoria": "PESCADO",
   "definir": {
-    "kcal": 410,
-    "proteinas": 41,
-    "carbohidratos": 32,
-    "grasas": 10,
+    "kcal": 374,
+    "proteinas": 40,
+    "carbohidratos": 39,
+    "grasas": 7,
     "precio": 15000
   }
 }
