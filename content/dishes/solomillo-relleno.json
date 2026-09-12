@@ -6,25 +6,25 @@
   "slug": "solomillo-relleno",
   "descripcion": "Solomillo de cerdo relleno con espinaca, champiñones, cebolla, queso Port Salut y queso crema. \nServido con puré de calabaza y una reducción de vegetales que concentra y realza los sabores del plato.",
   "construir": {
-    "kcal": 600,
-    "carbohidratos": 43,
-    "proteinas": 49,
-    "grasas": 25,
+    "kcal": 720,
+    "carbohidratos": 83,
+    "proteinas": 59,
+    "grasas": 18,
     "precio": 14500
   },
   "mantener": {
-    "kcal": 475,
-    "proteinas": 40,
-    "carbohidratos": 33,
-    "grasas": 20,
+    "kcal": 532,
+    "proteinas": 48,
+    "carbohidratos": 53,
+    "grasas": 15,
     "precio": 13500
   },
   "categoria": "CERDO",
   "definir": {
-    "kcal": 370,
-    "proteinas": 34,
-    "carbohidratos": 23,
-    "grasas": 16,
+    "kcal": 429,
+    "proteinas": 43,
+    "carbohidratos": 36,
+    "grasas": 13,
     "precio": 12500
   }
 }
