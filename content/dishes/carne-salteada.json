@@ -6,17 +6,17 @@
   "descripcion": "Tiras de carne vacuna magra salteadas al wok con brócoli, zucchini, morrón, zanahoria y cebolla, terminadas con salsa oriental de soja, miel, ajo y jengibre. \n\nAcompañadas de arroz yamaní.",
   "construir": {
     "precio": 15000,
-    "kcal": 750,
-    "proteinas": 64,
-    "carbohidratos": 88,
-    "grasas": 16
+    "kcal": 704,
+    "proteinas": 61,
+    "carbohidratos": 85,
+    "grasas": 13
   },
   "mantener": {
     "precio": 14000,
-    "kcal": 555,
-    "proteinas": 52,
-    "carbohidratos": 51,
-    "grasas": 12
+    "kcal": 534,
+    "proteinas": 50,
+    "carbohidratos": 60,
+    "grasas": 11
   },
   "categoria": "CARNE",
   "definir": {
