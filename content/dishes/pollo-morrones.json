@@ -1,0 +1,29 @@
+{
+  "foto": "/assets/img/uploads/imagen-de-chatgpt-27-sept-2026-13_31_58.png",
+  "nombre": "POLLO CON SALSA DE MORRONES ASADOS",
+  "orden": 4,
+  "slug": "POLLO-MORRONES",
+  "descripcion": "Pechuga de pollo acompañada de una cremosa salsa de morrones asados, batatas en cubo y vegetales asados al horno.",
+  "construir": {
+    "precio": 1,
+    "kcal": 700,
+    "proteinas": 64,
+    "carbohidratos": 71,
+    "grasas": 18
+  },
+  "mantener": {
+    "precio": 1,
+    "kcal": 523,
+    "proteinas": 54,
+    "carbohidratos": 43,
+    "grasas": 15
+  },
+  "categoria": "POLLO",
+  "definir": {
+    "precio": 1,
+    "kcal": 411,
+    "proteinas": 46,
+    "carbohidratos": 30,
+    "grasas": 12
+  }
+}
