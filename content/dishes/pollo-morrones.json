@@ -5,14 +5,14 @@
   "slug": "POLLO-MORRONES",
   "descripcion": "Pechuga de pollo acompañada de una cremosa salsa de morrones asados, batatas en cubo y vegetales asados al horno.",
   "construir": {
-    "precio": 1,
+    "precio": 15500,
     "kcal": 700,
     "proteinas": 64,
     "carbohidratos": 71,
     "grasas": 18
   },
   "mantener": {
-    "precio": 1,
+    "precio": 14500,
     "kcal": 523,
     "proteinas": 54,
     "carbohidratos": 43,
@@ -20,7 +20,7 @@
   },
   "categoria": "POLLO",
   "definir": {
-    "precio": 1,
+    "precio": 13500,
     "kcal": 411,
     "proteinas": 46,
     "carbohidratos": 30,
