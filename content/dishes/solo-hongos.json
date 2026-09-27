@@ -5,14 +5,14 @@
   "slug": "SOLO-HONGOS",
   "descripcion": "Medallones de solomillo en una cremosa salsa de champiñones y tomillo, acompañado de cuscús integral con verduritas.",
   "construir": {
-    "precio": 1,
+    "precio": 15500,
     "kcal": 735,
     "proteinas": 64,
     "carbohidratos": 71,
     "grasas": 19
   },
   "mantener": {
-    "precio": 1,
+    "precio": 14500,
     "kcal": 517,
     "proteinas": 53,
     "carbohidratos": 39,
@@ -20,7 +20,7 @@
   },
   "categoria": "CERDO",
   "definir": {
-    "precio": 1,
+    "precio": 13500,
     "kcal": 406,
     "proteinas": 46,
     "carbohidratos": 26,
