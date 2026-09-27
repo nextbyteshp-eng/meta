@@ -5,14 +5,14 @@
   "slug": "STROGANOFF-HONGOS",
   "descripcion": "Tiernos bocados de carne en una salsa cremosa de hongos, acompañados de arroz yamaní.",
   "construir": {
-    "precio": 1,
+    "precio": 16500,
     "kcal": 695,
     "proteinas": 64,
     "carbohidratos": 72,
     "grasas": 18
   },
   "mantener": {
-    "precio": 1,
+    "precio": 15500,
     "kcal": 514,
     "proteinas": 53,
     "carbohidratos": 44,
@@ -20,7 +20,7 @@
   },
   "categoria": "CARNE",
   "definir": {
-    "precio": 1,
+    "precio": 14500,
     "kcal": 402,
     "proteinas": 45,
     "carbohidratos": 30,
