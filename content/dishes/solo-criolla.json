@@ -1,0 +1,29 @@
+{
+  "foto": "/assets/img/uploads/imagen-de-chatgpt-27-sept-2026-14_31_22.png",
+  "nombre": "SOLOMILLO A LA CRIOLLA",
+  "orden": 2,
+  "slug": "SOLO-CRIOLLA",
+  "descripcion": "Solomillo de cerdo acompañado de una sabrosa salsa criolla de vegetales y papas rústicas al horno.",
+  "construir": {
+    "precio": 1,
+    "kcal": 713,
+    "proteinas": 68,
+    "carbohidratos": 70,
+    "grasas": 17
+  },
+  "mantener": {
+    "precio": 1,
+    "kcal": 524,
+    "proteinas": 52,
+    "carbohidratos": 47,
+    "grasas": 13
+  },
+  "categoria": "CERDO",
+  "definir": {
+    "precio": 1,
+    "kcal": 406,
+    "proteinas": 44,
+    "carbohidratos": 31,
+    "grasas": 11
+  }
+}
