@@ -5,14 +5,14 @@
   "slug": "LASAÑA-BERENJENAS",
   "descripcion": "Capas de berenjena con bolognesa magra, ricota, jamón, queso Port Salut y una suave bechamel, gratinadas al horno.",
   "construir": {
-    "precio": 1,
+    "precio": 16000,
     "kcal": 715,
     "proteinas": 65,
     "carbohidratos": 71,
     "grasas": 20
   },
   "mantener": {
-    "precio": 1,
+    "precio": 15000,
     "kcal": 496,
     "proteinas": 53,
     "carbohidratos": 37,
@@ -20,7 +20,7 @@
   },
   "categoria": "CARNE",
   "definir": {
-    "precio": 1,
+    "precio": 14000,
     "kcal": 405,
     "proteinas": 43,
     "carbohidratos": 30,
