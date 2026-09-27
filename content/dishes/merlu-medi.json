@@ -1,0 +1,29 @@
+{
+  "foto": "/assets/img/uploads/imagen-de-chatgpt-27-sept-2026-14_56_29.png",
+  "nombre": "MERLUZA MEDITERRANEA CON SALSA DE MORRÓN ASADO & TOMATE",
+  "orden": 2,
+  "slug": "MERLU-MEDI",
+  "descripcion": "Filet de merluza al horno con salsa artesanal de morrón asado y tomate, acompañado de quinoa y vegetales mediterráneos grillados.",
+  "construir": {
+    "precio": 1,
+    "kcal": 690,
+    "proteinas": 57,
+    "carbohidratos": 89,
+    "grasas": 16
+  },
+  "mantener": {
+    "precio": 1,
+    "kcal": 500,
+    "proteinas": 49,
+    "carbohidratos": 56,
+    "grasas": 12
+  },
+  "categoria": "PESCADO",
+  "definir": {
+    "precio": 1,
+    "kcal": 405,
+    "proteinas": 43,
+    "carbohidratos": 39,
+    "grasas": 10
+  }
+}
