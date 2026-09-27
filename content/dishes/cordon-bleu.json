@@ -5,14 +5,14 @@
   "slug": "cordon-bleu",
   "descripcion": "Pechuga de pollo rellena de morrones asados, cebolla rehogada, jamón y queso Port Salut, terminada con salsa fileto y acompañado de un suave puré de Calabaza (DEFINIR) o Mixto Papa y Calabaza (MANTENER Y CONSTRUIR)",
   "construir": {
-    "precio": 1,
+    "precio": 16000,
     "kcal": 697,
     "proteinas": 64,
     "carbohidratos": 71,
     "grasas": 18
   },
   "mantener": {
-    "precio": 1,
+    "precio": 15000,
     "kcal": 505,
     "proteinas": 53,
     "carbohidratos": 40,
@@ -20,7 +20,7 @@
   },
   "categoria": "POLLO",
   "definir": {
-    "precio": 1,
+    "precio": 14000,
     "kcal": 398,
     "proteinas": 45,
     "carbohidratos": 28,
