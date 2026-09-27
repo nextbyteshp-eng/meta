@@ -5,14 +5,14 @@
   "slug": "MERLU-MEDI",
   "descripcion": "Filet de merluza al horno con salsa artesanal de morrón asado y tomate, acompañado de quinoa y vegetales mediterráneos grillados.",
   "construir": {
-    "precio": 1,
+    "precio": 15500,
     "kcal": 690,
     "proteinas": 57,
     "carbohidratos": 89,
     "grasas": 16
   },
   "mantener": {
-    "precio": 1,
+    "precio": 14500,
     "kcal": 500,
     "proteinas": 49,
     "carbohidratos": 56,
@@ -20,7 +20,7 @@
   },
   "categoria": "PESCADO",
   "definir": {
-    "precio": 1,
+    "precio": 13500,
     "kcal": 405,
     "proteinas": 43,
     "carbohidratos": 39,
