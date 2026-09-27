@@ -5,14 +5,14 @@
   "slug": "SOLO-CRIOLLA",
   "descripcion": "Solomillo de cerdo acompañado de una sabrosa salsa criolla de vegetales y papas rústicas al horno.",
   "construir": {
-    "precio": 1,
+    "precio": 15000,
     "kcal": 713,
     "proteinas": 68,
     "carbohidratos": 70,
     "grasas": 17
   },
   "mantener": {
-    "precio": 1,
+    "precio": 14000,
     "kcal": 524,
     "proteinas": 52,
     "carbohidratos": 47,
@@ -20,7 +20,7 @@
   },
   "categoria": "CERDO",
   "definir": {
-    "precio": 1,
+    "precio": 13000,
     "kcal": 406,
     "proteinas": 44,
     "carbohidratos": 31,
