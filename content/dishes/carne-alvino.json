@@ -5,14 +5,14 @@
   "slug": "CARNE-ALVINO",
   "descripcion": "Carne cocida lentamente al vino tinto y hierbas aromáticas hasta quedar tierna y sabrosa, acompañada de un suave puré Calabaza (DEFINIR) Mixto papas y calabaza (MANTENER/CONSTRUIR)",
   "construir": {
-    "precio": 1,
+    "precio": 16000,
     "kcal": 719,
     "proteinas": 65,
     "carbohidratos": 71,
     "grasas": 18
   },
   "mantener": {
-    "precio": 1,
+    "precio": 15000,
     "kcal": 518,
     "proteinas": 53,
     "carbohidratos": 41,
@@ -20,7 +20,7 @@
   },
   "categoria": "CARNE",
   "definir": {
-    "precio": 1,
+    "precio": 14000,
     "kcal": 399,
     "proteinas": 45,
     "carbohidratos": 27,
