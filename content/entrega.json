@@ -5,12 +5,30 @@
     "texto": "Todo lo que necesitás saber sobre cuándo pedir, cuándo llega tu pedido, y las opciones de entrega o retiro."
   },
   "tarjetas": [
-    { "titulo": "Días de pedido", "texto": "Tomamos pedidos hasta el día <strong>miércoles</strong> de cada semana. Los pedidos que lleguen después quedan para la semana siguiente." },
-    { "titulo": "Días de entrega", "texto": "Entregamos los días <strong>viernes y sábados</strong>, en un horario a convenir con vos por WhatsApp." },
-    { "titulo": "Zona de envío", "texto": "Por el momento trabajamos con entregas en <strong>Pilar y alrededores</strong>, con un costo único de envío de <strong>$5.000</strong> por pedido." },
-    { "titulo": "Retiro en sucursal", "texto": "Podés retirar tu pedido sin costo en <strong>Necochea 444, Pilar</strong>, los días viernes o sábado, con horario a convenir." },
-    { "titulo": "Cómo llega tu pedido", "texto": "Tus viandas llegan <strong>congeladas, termoselladas</strong> y listas para guardar en el freezer, en bandejas aptas para microondas." },
-    { "titulo": "Formas de pago", "texto": "Podés abonar en <strong>efectivo</strong> al momento de la entrega o retiro, o por <strong>transferencia</strong> con anticipación (enviando el comprobante por WhatsApp)." }
+    {
+      "titulo": "Días de pedido",
+      "texto": "Tomamos pedidos hasta el día <strong>miércoles</strong> de cada semana. Los pedidos que lleguen después quedan para la semana siguiente."
+    },
+    {
+      "titulo": "Días de entrega",
+      "texto": "Entregamos los días <strong>sábados</strong>, en un horario a convenir con vos por WhatsApp."
+    },
+    {
+      "titulo": "Zona de envío",
+      "texto": "Por el momento trabajamos con entregas en <strong>Pilar y alrededores</strong>, con un costo único de envío de <strong>$5.000</strong> por pedido."
+    },
+    {
+      "titulo": "Retiro en sucursal",
+      "texto": "Podés retirar tu pedido sin costo en <strong>Necochea 444, Pilar</strong>, los días viernes o sábado, con horario a convenir."
+    },
+    {
+      "titulo": "Cómo llega tu pedido",
+      "texto": "Tus viandas llegan <strong>congeladas, termoselladas</strong> y listas para guardar en el freezer, en bandejas aptas para microondas."
+    },
+    {
+      "titulo": "Formas de pago",
+      "texto": "Podés abonar en <strong>efectivo</strong> al momento de la entrega o retiro, o por <strong>transferencia</strong> con anticipación (enviando el comprobante por WhatsApp)."
+    }
   ],
   "mapa": {
     "titulo": "Mapa de zona de entrega",
