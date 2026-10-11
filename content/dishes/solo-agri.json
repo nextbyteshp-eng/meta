@@ -5,14 +5,14 @@
   "slug": "SOLO-AGRI",
   "descripcion": "Solomillo de cerdo con una salsa agridulce de ananá y jengibre, acompañado de arroz yamaní y vegetales.",
   "construir": {
-    "precio": 15500,
+    "precio": 17000,
     "kcal": 694,
     "proteinas": 63,
     "carbohidratos": 71,
     "grasas": 17
   },
   "mantener": {
-    "precio": 14500,
+    "precio": 16000,
     "kcal": 526,
     "proteinas": 47,
     "carbohidratos": 71,
@@ -20,7 +20,7 @@
   },
   "categoria": "CERDO",
   "definir": {
-    "precio": 13500,
+    "precio": 15000,
     "kcal": 420,
     "proteinas": 44,
     "carbohidratos": 37,
