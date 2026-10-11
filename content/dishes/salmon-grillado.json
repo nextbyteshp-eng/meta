@@ -10,14 +10,14 @@
     "proteinas": 49,
     "carbohidratos": 64,
     "grasas": 28,
-    "precio": 21000
+    "precio": 23000
   },
   "mantener": {
     "kcal": 510,
     "proteinas": 39,
     "carbohidratos": 38,
     "grasas": 22,
-    "precio": 19000
+    "precio": 21000
   },
   "categoria": "PESCADO",
   "definir": {
@@ -25,6 +25,6 @@
     "proteinas": 32,
     "carbohidratos": 27,
     "grasas": 18,
-    "precio": 18000
+    "precio": 20000
   }
 }
