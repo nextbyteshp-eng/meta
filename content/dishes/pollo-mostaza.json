@@ -1,0 +1,29 @@
+{
+  "foto": "/assets/img/uploads/pollo-a-la-mostaza-y-boniato-asado-1-.png",
+  "nombre": "POLLO MOSTAZA & MIEL CON BATATAS RÚSTICAS",
+  "orden": 3,
+  "slug": "POLLO-MOSTAZA",
+  "descripcion": "Tierna pechuga de pollo bañada en una suave salsa de mostaza y miel, acompañada de batatas rústicas doradas al horno. Una combinación equilibrada de sabores dulces y salados.",
+  "construir": {
+    "precio": 0,
+    "kcal": 580,
+    "proteinas": 56,
+    "carbohidratos": 64,
+    "grasas": 12
+  },
+  "mantener": {
+    "precio": 0,
+    "kcal": 455,
+    "proteinas": 46,
+    "carbohidratos": 47,
+    "grasas": 10
+  },
+  "categoria": "POLLO",
+  "definir": {
+    "precio": 0,
+    "kcal": 390,
+    "proteinas": 40,
+    "carbohidratos": 39,
+    "grasas": 9
+  }
+}
