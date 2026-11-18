@@ -6,21 +6,21 @@
   "foto": "/assets/img/uploads/solomillo-con-ciruelas-y-puré-de-batata.png",
   "descripcion": "Medallones de solomillo de cerdo magro con una delicada salsa agridulce de ciruelas, cebolla y romero, acompañados de un suave puré de batata.",
   "definir": {
-    "precio": 0,
+    "precio": 15000,
     "kcal": 400,
     "carbohidratos": 39,
     "proteinas": 39,
     "grasas": 10
   },
   "mantener": {
-    "precio": 0,
+    "precio": 16000,
     "kcal": 475,
     "proteinas": 45,
     "carbohidratos": 48,
     "grasas": 12
   },
   "construir": {
-    "precio": 0,
+    "precio": 17000,
     "kcal": 615,
     "proteinas": 54,
     "carbohidratos": 66,
