@@ -1,29 +1,29 @@
 {
-  "foto": "/assets/img/uploads/pollo-a-la-paprika-con-puré-de-calabaza-1-.png",
   "nombre": "POLLO BRASEADO AL PIMENTÓN CON PURÉ DE CALABAZA",
-  "orden": 4,
   "slug": "POLLO-BRASEADO",
+  "categoria": "POLLO",
+  "orden": 4,
+  "foto": "/assets/img/uploads/pollo-a-la-paprika-con-puré-de-calabaza-1-.png",
   "descripcion": "Tiernos cortes de pollo cocidos lentamente con pimentón, cebolla y especias aromáticas, acompañados de un suave puré de calabaza. Un plato casero, sabroso y equilibrado.",
-  "construir": {
-    "precio": 0,
-    "kcal": 545,
-    "proteinas": 55,
-    "carbohidratos": 38,
-    "grasas": 23
+  "definir": {
+    "precio": 14500,
+    "kcal": 405,
+    "proteinas": 42,
+    "carbohidratos": 24,
+    "grasas": 17
   },
   "mantener": {
-    "precio": 0,
+    "precio": 15500,
     "kcal": 455,
     "proteinas": 47,
     "carbohidratos": 29,
     "grasas": 19
   },
-  "categoria": "POLLO",
-  "definir": {
-    "precio": 0,
-    "kcal": 405,
-    "proteinas": 42,
-    "carbohidratos": 24,
-    "grasas": 17
+  "construir": {
+    "precio": 16500,
+    "kcal": 545,
+    "proteinas": 55,
+    "carbohidratos": 38,
+    "grasas": 23
   }
 }
