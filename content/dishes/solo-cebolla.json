@@ -1,0 +1,29 @@
+{
+  "nombre": "SOLOMILLO DE CERDO CON CEBOLLA CARAMELIZADA, MANZANA Y ARROZ PRIMAVERA",
+  "slug": "SOLO-CEBOLLA",
+  "categoria": "CERDO",
+  "orden": 3,
+  "foto": "/assets/img/uploads/bandeja-de-solomillo-con-arroz-y-verduras-frescas.png",
+  "descripcion": "Tiernos medallones de solomillo de cerdo con cebolla caramelizada y una suave reducción de manzana, acompañados de arroz yamaní con zanahoria y arvejas, brócoli, zucchini y morrón salteados.",
+  "definir": {
+    "precio": 0,
+    "kcal": 415,
+    "proteinas": 42,
+    "carbohidratos": 44,
+    "grasas": 9
+  },
+  "mantener": {
+    "precio": 0,
+    "kcal": 520,
+    "proteinas": 49,
+    "carbohidratos": 59,
+    "grasas": 11
+  },
+  "construir": {
+    "precio": 0,
+    "kcal": 675,
+    "proteinas": 60,
+    "carbohidratos": 81,
+    "grasas": 14
+  }
+}
