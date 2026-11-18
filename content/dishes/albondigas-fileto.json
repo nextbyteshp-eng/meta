@@ -1,29 +1,29 @@
 {
-  "foto": "/assets/img/uploads/albóndigas-en-salsa-y-puré-cremoso.png",
   "nombre": "ALBÓNDIGAS MAGRAS EN SALSA FILETO CON PURÉ MIXTO",
-  "orden": 3,
   "slug": "ALBONDIGAS-FILETO",
+  "categoria": "CARNE",
+  "orden": 3,
+  "foto": "/assets/img/uploads/albóndigas-en-salsa-y-puré-cremoso.png",
   "descripcion": "Albóndigas caseras de carne vacuna magra, horneadas y acompañadas de una salsa fileto de tomate, cebolla, morrón y hierbas aromáticas. Servidas con un suave puré mixto de papa y calabaza.",
-  "construir": {
-    "precio": 0,
-    "kcal": 620,
-    "proteinas": 50,
-    "carbohidratos": 57,
-    "grasas": 22
+  "definir": {
+    "precio": 16000,
+    "kcal": 430,
+    "proteinas": 38,
+    "carbohidratos": 35,
+    "grasas": 15
   },
   "mantener": {
-    "precio": 0,
+    "precio": 17000,
     "kcal": 490,
     "proteinas": 43,
     "carbohidratos": 42,
     "grasas": 17
   },
-  "categoria": "CARNE",
-  "definir": {
-    "precio": 0,
-    "kcal": 430,
-    "proteinas": 38,
-    "carbohidratos": 35,
-    "grasas": 15
+  "construir": {
+    "precio": 18000,
+    "kcal": 620,
+    "proteinas": 50,
+    "carbohidratos": 57,
+    "grasas": 22
   }
 }
