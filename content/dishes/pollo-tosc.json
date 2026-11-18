@@ -1,29 +1,29 @@
 {
-  "foto": "/assets/img/uploads/pollo-cremoso-con-patatas-al-romero.png",
   "nombre": "POLLO A LA TOSCANA CON PAPAS AL ROMERO",
-  "orden": 1,
   "slug": "POLLO-TOSC",
-  "descripcion": "Tierna pechuga de pollo en una suave salsa estilo toscano con espinacas, tomates secos y hierbas aromáticas. Acompañada de papas doradas al horno con romero.",
-  "construir": {
-    "precio": 0,
-    "kcal": 582,
-    "proteinas": 63,
-    "carbohidratos": 57,
-    "grasas": 12
-  },
-  "mantener": {
-    "precio": 0,
-    "kcal": 460,
-    "proteinas": 52,
-    "carbohidratos": 43,
-    "grasas": 9
-  },
   "categoria": "POLLO",
+  "orden": 1,
+  "foto": "/assets/img/uploads/pollo-cremoso-con-patatas-al-romero.png",
+  "descripcion": "Tierna pechuga de pollo en una suave salsa estilo toscano con espinacas, tomates secos y hierbas aromáticas. Acompañada de papas doradas al horno con romero.",
   "definir": {
     "kcal": 395,
     "proteinas": 45,
     "carbohidratos": 36,
     "grasas": 8,
-    "precio": 0
+    "precio": 15000
+  },
+  "mantener": {
+    "precio": 16000,
+    "kcal": 460,
+    "proteinas": 52,
+    "carbohidratos": 43,
+    "grasas": 9
+  },
+  "construir": {
+    "precio": 17000,
+    "kcal": 582,
+    "proteinas": 63,
+    "carbohidratos": 57,
+    "grasas": 12
   }
 }
