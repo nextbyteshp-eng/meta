@@ -1,29 +1,29 @@
 {
-  "foto": "/assets/img/uploads/merluza-en-salsa-vizcaína-con-patatas.png",
   "nombre": "MERLUZA A LA VIZCAÍNA CON PAPAS AL NATURAL",
-  "orden": 3,
   "slug": "MERLU-VISCAINA",
+  "categoria": "PESCADO",
+  "orden": 3,
+  "foto": "/assets/img/uploads/merluza-en-salsa-vizcaína-con-patatas.png",
   "descripcion": "Filet de merluza al horno con una sabrosa salsa de tomate, cebolla, morrones en tiras y pimentón, acompañado de papas al natural con aceite de oliva y perejil.",
-  "construir": {
-    "precio": 0,
-    "kcal": 510,
-    "proteinas": 42,
-    "carbohidratos": 66,
-    "grasas": 9
+  "definir": {
+    "precio": 15000,
+    "kcal": 330,
+    "proteinas": 30,
+    "carbohidratos": 40,
+    "grasas": 6
   },
   "mantener": {
-    "precio": 0,
+    "precio": 16000,
     "kcal": 400,
     "proteinas": 35,
     "carbohidratos": 50,
     "grasas": 7
   },
-  "categoria": "PESCADO",
-  "definir": {
-    "precio": 0,
-    "kcal": 330,
-    "proteinas": 30,
-    "carbohidratos": 40,
-    "grasas": 6
+  "construir": {
+    "precio": 17000,
+    "kcal": 510,
+    "proteinas": 42,
+    "carbohidratos": 66,
+    "grasas": 9
   }
 }
