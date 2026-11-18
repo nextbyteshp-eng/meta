@@ -6,21 +6,21 @@
   "foto": "/assets/img/uploads/albóndigas-en-salsa-y-puré-cremoso.png",
   "descripcion": "Albóndigas caseras de carne vacuna magra, horneadas y acompañadas de una salsa fileto de tomate, cebolla, morrón y hierbas aromáticas. Servidas con un suave puré mixto de papa y calabaza.",
   "definir": {
-    "precio": 16000,
+    "precio": 15500,
     "kcal": 430,
     "proteinas": 38,
     "carbohidratos": 35,
     "grasas": 15
   },
   "mantener": {
-    "precio": 17000,
+    "precio": 16500,
     "kcal": 490,
     "proteinas": 43,
     "carbohidratos": 42,
     "grasas": 17
   },
   "construir": {
-    "precio": 18000,
+    "precio": 17500,
     "kcal": 620,
     "proteinas": 50,
     "carbohidratos": 57,
