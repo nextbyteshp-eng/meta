@@ -1,0 +1,29 @@
+{
+  "nombre": "SOLOMILLO DE CERDO CON SALSA DE CIRUELAS & ROMERO Y PURÉ DE BATATA",
+  "slug": "SOLOMILLO-CIRUELAS",
+  "categoria": "CERDO",
+  "orden": 1,
+  "foto": "/assets/img/uploads/solomillo-con-ciruelas-y-puré-de-batata.png",
+  "descripcion": "Medallones de solomillo de cerdo magro con una delicada salsa agridulce de ciruelas, cebolla y romero, acompañados de un suave puré de batata.",
+  "definir": {
+    "precio": 0,
+    "kcal": 400,
+    "carbohidratos": 39,
+    "proteinas": 39,
+    "grasas": 10
+  },
+  "mantener": {
+    "precio": 0,
+    "kcal": 475,
+    "proteinas": 45,
+    "carbohidratos": 48,
+    "grasas": 12
+  },
+  "construir": {
+    "precio": 0,
+    "kcal": 615,
+    "proteinas": 54,
+    "carbohidratos": 66,
+    "grasas": 15
+  }
+}
