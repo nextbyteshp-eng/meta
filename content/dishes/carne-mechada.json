@@ -1,29 +1,29 @@
 {
-  "foto": "/assets/img/uploads/carne-desmechada-con-arroz-y-verduras.png",
   "nombre": "CARNE MECHADA CON ARROZ DE COLIFLOR/YAMANI",
-  "orden": 4,
   "slug": "CARNE-MECHADA",
-  "descripcion": "Carne vacuna magra cocida lentamente hasta lograr una textura tierna, jugosa y desmechada, salteada con morrones y cebolla acompañada de una base de arroz de coliflor (DEFINIR) o arroz yamaní (MANTENER Y CONSTRUIR). Una preparación sabrosa, nutritiva y rica en proteínas.",
-  "construir": {
-    "kcal": 740,
-    "proteinas": 69,
-    "carbohidratos": 69,
-    "grasas": 21,
-    "precio": 0
-  },
-  "mantener": {
-    "precio": 0,
-    "kcal": 565,
-    "carbohidratos": 44,
-    "grasas": 18,
-    "proteinas": 58
-  },
   "categoria": "CARNE",
+  "orden": 4,
+  "foto": "/assets/img/uploads/carne-desmechada-con-arroz-y-verduras.png",
+  "descripcion": "Carne vacuna magra cocida lentamente hasta lograr una textura tierna, jugosa y desmechada, salteada con morrones y cebolla acompañada de una base de arroz de coliflor (DEFINIR) o arroz yamaní (MANTENER Y CONSTRUIR). Una preparación sabrosa, nutritiva y rica en proteínas.",
   "definir": {
     "kcal": 410,
     "proteinas": 50,
     "carbohidratos": 20,
     "grasas": 15,
-    "precio": 0
+    "precio": 16000
+  },
+  "mantener": {
+    "precio": 17000,
+    "kcal": 565,
+    "carbohidratos": 44,
+    "grasas": 18,
+    "proteinas": 58
+  },
+  "construir": {
+    "kcal": 740,
+    "proteinas": 69,
+    "carbohidratos": 69,
+    "grasas": 21,
+    "precio": 18000
   }
 }
