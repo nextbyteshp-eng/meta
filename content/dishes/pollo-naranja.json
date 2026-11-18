@@ -1,29 +1,29 @@
 {
-  "foto": "/assets/img/uploads/pollo-cítrico-con-arroz-integral.png",
   "nombre": "POLLO NARANJA & JENGIBRE CON ARROZ INTEGRAL",
-  "orden": 2,
   "slug": "POLLO-NARANJA",
+  "categoria": "POLLO",
+  "orden": 2,
+  "foto": "/assets/img/uploads/pollo-cítrico-con-arroz-integral.png",
   "descripcion": "Tiernos cortes de pollo en una delicada salsa de naranja natural y jengibre, acompañados de arroz integral yamaní. Una combinación aromática, fresca y ligeramente cítrica.",
-  "construir": {
-    "precio": 0,
-    "kcal": 660,
-    "proteinas": 51,
-    "carbohidratos": 73,
-    "grasas": 18
+  "definir": {
+    "precio": 14500,
+    "kcal": 410,
+    "proteinas": 37,
+    "carbohidratos": 36,
+    "grasas": 12
   },
   "mantener": {
-    "precio": 0,
+    "precio": 15500,
     "kcal": 490,
     "proteinas": 43,
     "carbohidratos": 48,
     "grasas": 14
   },
-  "categoria": "POLLO",
-  "definir": {
-    "precio": 0,
-    "kcal": 410,
-    "proteinas": 37,
-    "carbohidratos": 36,
-    "grasas": 12
+  "construir": {
+    "precio": 16500,
+    "kcal": 660,
+    "proteinas": 51,
+    "carbohidratos": 73,
+    "grasas": 18
   }
 }
