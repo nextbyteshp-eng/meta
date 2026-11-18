@@ -1,29 +1,29 @@
 {
-  "foto": "/assets/img/uploads/merluza-mediterránea-con-arroz-y-verduras.png",
   "nombre": "MERLUZA A LA SICILIANA CON ARROZ YAMANÍ",
-  "orden": 1,
   "slug": "MERLU-SICILIANA",
+  "categoria": "PESCADO",
+  "orden": 1,
+  "foto": "/assets/img/uploads/merluza-mediterránea-con-arroz-y-verduras.png",
   "descripcion": "Filet de merluza al horno con salsa mediterránea de tomate, aceitunas negras, alcaparras y hierbas aromáticas. Acompañado de arroz yamaní, Zucchini y Morrones Salteados.",
-  "construir": {
-    "precio": 0,
-    "kcal": 610,
-    "proteinas": 48,
-    "carbohidratos": 73,
-    "grasas": 13
+  "definir": {
+    "precio": 15000,
+    "kcal": 360,
+    "proteinas": 33,
+    "carbohidratos": 33,
+    "grasas": 10
   },
   "mantener": {
-    "precio": 0,
+    "precio": 16000,
     "kcal": 440,
     "proteinas": 39,
     "carbohidratos": 48,
     "grasas": 10
   },
-  "categoria": "PESCADO",
-  "definir": {
-    "precio": 0,
-    "kcal": 360,
-    "proteinas": 33,
-    "carbohidratos": 33,
-    "grasas": 10
+  "construir": {
+    "precio": 17000,
+    "kcal": 610,
+    "proteinas": 48,
+    "carbohidratos": 73,
+    "grasas": 13
   }
 }
